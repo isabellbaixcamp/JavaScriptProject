@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>inner1</title>
+	<script>
+		function saludo() {
+			alert("hola");
+		}
+
+		function saludo2() {
+			var nom;
+			nom = prompt("nombre?");
+			//return nom;
+			document.getElementById("nom").innerHTML= nom; // escritura en un tag especifico con la funcion
+			document.getElementById("nom").style.backgroundColor = "purple";// insercion de css a traves del document
+			document.getElementById("nom").style.color = "white";
+		}
+	</script>
+</head>
+<body>
+	<!--  METODOS PARA ACCEDER AL DOM-->
+
+	<h1 id="cabecera"> Biemvenido</h1>
+	<h2 id="nom"> </h2>
+	<p id="uno">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quam libero non, dolorem error, totam voluptas iure dicta animi. Debitis quisquam dolore libero repellat autem assumenda, voluptatibus amet iusto deleniti?</p>
+	
+	<p id="dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur asperiores hic voluptatibus similique nisi numquam illum assumenda molestias ratione, expedita laborum dignissimos vitae temporibus eveniet, saepe alias facilis culpa, inventore.</p>
+	<p id="tres"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam inventore voluptas porro, suscipit nobis nemo aliquam error tempora incidunt cum! Qui sed excepturi ut aperiam repellat, modi veritatis, quaerat.</p>
+
+
+	<!-- SCRIPT DEBE DE IR AL FINAL DEL HTML PARA DEJAR CARGAR LAS LINEAS DE HTML, (DINAMISMO) -->                 <!--evento del raton-->
+	<input type="button" value="haz click" onclick="saludo();"><!-- INSERCION DE LAS <FUNCIONES-->                 
+	<input type="button" value="haz click" onclick="saludo2();">
+
+	<script>
+		alert(document.getElementById("cabecera")); // object HTMLHeadingElement
+		alert(document.getElementById("cabecera").innerHTML); // propiedad inner, lee el nodo texto
+		document.getElementById("cabecera").innerHTML+= " hola!"; // se define al elemento descrito el valor de lo que se agregue
+		document.getElementById("uno").innerHTML+= saludo2();
+
+
+	</script>
+</body>
+</html>

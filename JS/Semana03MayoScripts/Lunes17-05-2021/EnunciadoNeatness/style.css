@@ -1,0 +1,198 @@
+
+body {
+	margin: 0;
+	padding: 0;	
+	 background-image: url('images/img03.jpg');
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position: center center;
+	 background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #7F7F81;
+}
+
+h1, h2{
+	margin: 0;
+	padding-top: 15px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+h1 {
+	font-size: 2em;
+	
+	
+	
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+
+
+p, ul {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: #3ABADF;
+}
+
+
+
+img.border {
+	border: 6px solid #E1F1F6;
+}
+
+img.alignleft {
+	float: left;
+	margin-right: 25px;
+}
+
+img.alignright {
+	float: right;
+}
+
+
+
+#container {
+	margin: 0 auto;
+	padding: 0;
+	width:700px;
+	height:900px;
+background:rgba(255,255,255,0.8);
+border-radius:15%;
+}
+
+/* Header */
+
+header {
+	width: 700px;
+	height: 300px;
+	margin: 0 auto;
+	border-bottom:6px solid red;
+	
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	height: 60px;
+	margin: 0;
+	padding: 160px 0px 0px 0px;
+	color: #FFFFFF;
+}
+
+
+
+#logo h1 {margin: 0;
+	padding: 0;
+	float: left;
+	padding-left: 30px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	text-shadow: #728927 -1px 1px 2px;
+	font-size: 64px;
+}
+
+
+/* Menu */
+
+nav{
+	width: 700px;
+	height: 61px;
+	margin: 0 auto;
+	padding: 0;
+	
+	background-color:purple;
+	}
+
+nav ul {
+	margin: 0;
+	padding: 0px 0px 0px 48px;
+	list-style: none;
+	line-height: normal;
+}
+
+nav li {
+	margin-left:15px;
+	float: left;
+}
+
+nav a {
+	display: block;
+	height: 41px;
+	margin-right: 1px;
+	padding: 20px 20px 0px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: #7E0044 -1px 1px 2px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+}
+
+
+
+nav a:hover {
+	background: url(images/img03.jpg) repeat-x left top;
+	text-decoration: none;
+}
+
+
+
+/* Content */
+
+section{
+	float: left;
+	width: 500px;
+	
+}
+
+
+.title {
+	padding-top:10px;
+		padding-bottom:6px;
+
+	letter-spacing: -1px;
+	color: purple;
+}
+
+ 
+
+
+article {
+	text-align: justify;
+	margin-bottom: 25px;
+	padding: 25px;
+}
+
+
+
+/* Footer */
+
+footer {
+	position:absolute;
+	top:850px;
+	left:45%;
+	margin: 0px auto 40px auto;	
+	}
+
+footer p {
+	margin: 0;
+	padding-top: 20px;
+	line-height: normal;
+	font-size: 20px;
+	color: red;
+	text-align: center;	text-shadow:-7px 5px 9px purple;
+
+}
+

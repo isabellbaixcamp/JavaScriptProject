@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		ul li#blue {
+			background-color: blue;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		/* 
+         Escriure  un programa que llegeixi 5 nom d’alumnes i els seus noms es desin en una cadena de text per després veure els noms en la página com una llista. Pista:cadena+=cadena.Exemplede sortida: Laura-luis-pedro-pablo-pepi
+		*/
+
+		var name;
+
+        for(i = 0; i < 5; i++) {
+        	name = prompt("indique el nombre");
+        	name+= name;
+
+        document.write("<ul><li id='blue'>" + name + "</li></ul");
+
+        	
+        }
+	</script>
+</body>
+</html>

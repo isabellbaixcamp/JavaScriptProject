@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+    <script>
+
+        function registro(){​​​​
+
+		alert("hola");
+		var aux;
+        //aparece el nombre y las aficiones que tiene .Salida a escoger.
+	
+		//if(document.value != "") {
+			aux = document.miFormito.nom.value;
+			var cadena = "";
+
+			if(document.miFormito.checkmusica.checked == true) {
+				cadena += "musica ";
+			}
+
+			if(document.miFormito.checkdanza.checked == true) {
+				cadena += "danza ";
+			}
+
+			if(document.miFormito.checkleer.checked == true) {
+				cadena += "leer ";
+			}
+
+			if(document.miFormito.checkviajar.checked == true) {
+				cadena += "viajar ";
+			}
+		//}	
+			if(cadena == "") {
+				alert(aux + "no has escrito");
+			} else {
+				alert(aux + "se ha escrito a " + cadena);
+			}
+
+		alert(aux);
+                }​​​​
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Aficiones</h1>
+
+    <form action="#" method="get" name="miFormito">
+
+    <label for="" >Nombre</label>
+
+    <input type="text" name="nom" />
+
+        <input  name="checkmusica" type="checkbox"/>Música
+
+        <input  name="checkdanza" type="checkbox"/>Danza
+
+        <input  name="checkleer" type="checkbox"/>Leer
+
+        <input  name="checkviajar" type="checkbox"/>Viajar
+
+    <input type="button" value="subscribir" onclick="registro();"/>
+
+
+	<div id="respuesta"></div>
+    </form>
+
+</body>
+
+</html>
+
+

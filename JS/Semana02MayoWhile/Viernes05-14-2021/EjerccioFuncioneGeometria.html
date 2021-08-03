@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="funcionesGeometricas.js"></script>
+</head>
+<body>
+	<script>
+		/* Funciones para:
+		- area de un triangulo (b*a) /2
+		- area de un circulo (pi * r  2)
+		- area de un cuadrado. (lado * lado)
+		- area de un rectangulo (lado1* lado2);*/
+
+		var num1, num2, triangle, circle, ratio, quadrade, lado, rectangle, rec1, rec2, opcion, resp;
+
+		/*num1 = parseFloat(prompt("base"));
+		num2 = parseFloat(prompt("altura"));
+
+		triangle = area_triangulo(num1, num2);
+
+		alert("el area del triangulo es " + triangle );
+
+		ratio = parseFloat(prompt("indique el radio?"));
+
+		circle = area_circulo();
+
+		alert(" el area del circulo es: " + circle);
+
+		lado = parseFloat(prompt("indique el lado?"));
+
+		quadrade = area_cuadrado(lado);
+
+		alert(" el area del cuadrado es: " + quadrade);
+
+		rec1 = parseFloat(prompt("indique el lado 1?"));
+
+		rec2 = parseFloat(prompt("indique el lado 2?"));
+
+		rectangle = area_rectangulo(rec1, rec2);
+
+		alert(" el area del rectangulo es: " + rectangle);
+
+		////////////// */
+
+
+		opcion = prompt("desea calcular alguna area: triangulo, circulo, cuadrado, rectangulo? ");
+
+		switch(opcion) {
+			case "triangulo".toLowerCase():
+				num1 = parseFloat(prompt("base"));
+				num2 = parseFloat(prompt("altura"));
+
+				triangle = area_triangulo(num1, num2);
+
+				alert("el area del triangulo es " + triangle );
+				break;
+			case "circulo".toLowerCase():
+				ratio = parseFloat(prompt("indique el radio?"));
+
+				circle = area_circulo();
+
+				alert(" el area del circulo es: " + circle);
+				break;
+			case "cuadrado".toLowerCase():
+				lado = parseFloat(prompt("indique el lado?"));
+
+				quadrade = area_cuadrado(lado);
+
+				alert(" el area del cuadrado es: " + quadrade);
+				break;
+			case "rectangulo".toLowerCase():
+				rec1 = parseFloat(prompt("indique el lado 1?"));
+
+				rec2 = parseFloat(prompt("indique el lado 2?"));
+
+				rectangle = area_rectangulo(rec1, rec2);
+
+				alert(" el area del rectangulo es: " + rectangle);
+				break;
+				default:
+				alert("valores no admitidos"); 
+
+
+		}
+
+
+
+
+
+
+	</script>
+
+
+</body>
+</html>

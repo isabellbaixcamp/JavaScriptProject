@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function crearP() {
+			var para = document.createElement('p');
+			var texto = document.createTextNode("texto nuevo");
+			para.appendChild(texto); // añade un hijo a la variable para
+			var elemento = document.getElementById('dividi');
+			elemento.appendChild(para); //añade la p al div
+
+			// otra p
+
+			var nuevaP = 
+		}
+
+		function crearImagen() {
+			var laImagen = document.createElement('img');
+			laImagen.setAttribute("src", "bowie.png");
+			laImagen.setAttribute("width", "600px");
+			laImagen.setAttribute("heigth", "600px");
+			document.body.appendChild(laImagen);
+		}
+
+	</script>
+</head>
+<body>
+	<div id="dividi">
+		<p>Parrafo</p>
+		<p>Parrafo</p>
+	</div>
+	<button onclick="crearP();">crear p</button>
+	<button onclick="crearImagen();">Crear Imagen</button>
+</body>
+</html>

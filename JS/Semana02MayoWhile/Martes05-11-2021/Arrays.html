@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var meses = ["enero","febrero","marzo","abril"];
+		alert("el segundo mes es :" +meses[1]);
+
+		alert(meses.length);
+
+		var nombre = "george";
+
+		var listaNombres = new Array();
+			//listaNombres[0] = nombre;
+			for(i = 0; i < 4; i++) {
+				nombre = prompt("nombre");
+				listaNombres[i] = nombre;
+			}
+
+			document.write(listaNombres);
+
+
+			// pedir y guardar 4 notas
+
+			var nom,  sum = 0;
+			var notas = new Array(4);
+
+			for(i = 0; i < notas.length; i++) {
+				nom = parseFloat(prompt("indique la nota"));
+				notas[i] = nom;
+				sum += notas[i];
+				
+			}
+			
+			document.write("<p>" + notas + "</p>" + "<p>" + (sum / notas.length) + "</p>");
+
+			// pedir nombres y guardan en array hasta el "."
+			// indicar el numeroi de nombres el tercero y el penultimo
+
+			var nom, p = 0;
+			var nombre = new Array();
+
+			while( nom != '.') {
+				nom = prompt("indique el nombre");
+				nombre[p] = nom;
+				p++;
+
+			}
+
+			document.write("<p> la extension es" + nombre.length + " el terceros es  " + nombre[2] + " y el penultimo  " + nombre[nombre.length-2]);
+	</script>
+</body>
+</html>

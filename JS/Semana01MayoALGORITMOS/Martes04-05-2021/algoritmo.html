@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>Problema: la suma de dos numeros:</p>
+	<ul>
+		<li>pido un numero(entrada de datos)</li>
+		<li>lo guardo(1era variable)</li>
+		<li>pido un numero</li>
+		<li>lo guardo (otra variable)</li>
+		<li>hago suma</li>
+		<li>guarda el resultado(otra variable)</li>
+		<li>doy el resultado(salida de datos)</li>
+	</ul>
+
+	<!--  PSEUDOCODIGO DEL PROBLEMA
+	var
+	x,y,z:enter;
+	fvar
+	leer(x);
+	leer(y);
+	z = x + y;
+	escribir(z)
+	-->
+
+	<script>
+
+		// DEFINICION EN LENGUAJE JS
+		var x,y,z;
+
+		// FUNCION PARA CONVERTIR UN STRING A INTEGER
+		x=parseInt(prompt("introduzca el numero"));
+		y=parseInt(prompt("introduzca el numero"));
+		z=x+y;  //z="4" + "5" = "45" (SON STRING)
+		alert("la suma de los numeros es:" + z);
+
+		// las definiciones de los valores es igual a java
+
+	</script>
+
+	<p>Problema: la multiplicacion de tres numeros</p>
+
+	<!-- PSEUDOCODIGO DEL PROBLEMA DE MULTIPLICAR-->
+	<script>
+		/* 
+		var 
+		x,y,z, i: enter;
+		var mul
+		leer(x);
+		leer(y);
+		leer(z);
+		i = x * y * z;
+
+		*/
+
+		// SOLUCION
+
+		var x,y,z,i;
+
+		x = parseInt(prompt("introduzca el valor"));
+
+		y = parseInt(prompt("introduzca el valor"));
+		z = parseInt(prompt("introduzca el valor"));
+
+		i = x * y * z;
+
+		alert("el resultado de los tres valores multiplicados " + i);
+
+		/* ENTRADA DE NOMBRE Y EDAD*/
+
+		/* 
+		var 
+		a,b: enter;
+		
+		leer(a);
+		leer(b);
+		
+		escribir;
+
+		*/
+
+		// SOLUCION
+
+		var a,b;
+
+		a = parseInt(prompt("introduzca la edad"));
+
+		b = prompt("introduzca su nombre");
+
+		// a = a + 4; 
+
+		alert("Querid@ :" + b + " su edad es " + a + " y en el 2025 sera de " + (a + 4));
+
+		/* DOCUMENT WRITE PERMITE INCRUSTAR CODIGO HTML EN EL SCRIP DE JAVASCRIPT*/
+		document.write("<h1> queri</h1>")
+
+	</script>
+</body>
+</html>

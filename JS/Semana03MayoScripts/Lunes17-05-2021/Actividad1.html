@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function cambiaP() {   
+			var x = document.getElementsByTagName('p'); // al ser una coleccion de etiquetas devuelve un array de los mismos
+			alert(x[1].innerHTML);
+			x[1].innerHTML = "hola";
+			x[2].style.color = "lime";
+		}
+
+		function changesImage() { // cambio de imagenes
+			var y = document.getElementsByTagName('img');
+			for(i = 0; i < = 2; i++) {
+			y[i].src="img06.jpg";
+			}
+		}
+	</script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, est reprehenderit obcaecati commodi minima soluta dolores cupiditate deleniti vero totam nesciunt, placeat aspernatur, dolore laborum atque consequatur? Consequuntur, a, inventore?</p>
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium commodi, laborum nostrum. Ex placeat unde delectus pariatur rerum nihil quis reiciendis, a neque totam quibusdam fugiat? Ab voluptatum, quis ipsa?</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tenetur rem error eveniet repellat alias quasi voluptates ipsum quae consequuntur repudiandae rerum perspiciatis, commodi laboriosam quod ducimus ad cum odit.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nobis, accusamus, nemo nesciunt deserunt quod natus sit aspernatur, quaerat magni nihil, quidem quia vero illo incidunt! Illo rerum sapiente quia.</p>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum repellendus distinctio et quibusdam ea nesciunt commodi aut ducimus doloremque, quaerat quisquam maxime eos id voluptatem magnam nam eveniet illum esse.</p>
+	<button onclick="cambiaP();"> Click </button>  <!-- LLAMADO A LA FUNCTION cambiaP()-->
+	<img src="img05.jpg" alt="flor"/>
+	<img src="img06.jpg" alt="flor"/>
+	<img src="img01.jpg" alt="flor"/>
+	<button onclick="changesImage();">CLICK</button>
+
+</body>
+</html>

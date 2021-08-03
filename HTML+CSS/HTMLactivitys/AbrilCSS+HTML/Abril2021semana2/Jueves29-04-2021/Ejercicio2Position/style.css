@@ -1,0 +1,23 @@
+div#one {
+	border: 2px solid red;
+	position: relative;  /* de esta manera se declara padre al div*/
+	top: 100px;
+	left: 100px;
+	width: 200px;
+	height: 200px;
+	
+}
+
+p.top {
+	position: absolute;
+	font-size: 20px;
+	top: 4px;
+	left: 10px;
+
+}
+
+div#one img {
+	width: 100%;  /* siempre declarar con los punto y coma*/
+	height auto;
+	top: 40px;
+}

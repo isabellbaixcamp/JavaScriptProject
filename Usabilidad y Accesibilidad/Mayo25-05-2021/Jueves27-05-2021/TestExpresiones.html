@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>testExpresionesRegulares</title>
+	<script>
+		function testeo() {
+			var nom = document.Formidable.nombre.value;
+			/*PARA IDENTIFICAR LAS EXPRESIONES REGULARES SE HAN DE IMPRELEMTAR DENTRO DE CONTRABARRAS */
+			var patron = /^[\W]+@{1}[\W]+\.[a-z]{2,3}$/; // EXPRESION REGULAR (SINTAXIS)^[\w]+@{1}[\w]+\.[a-z]{2,3}$
+			var respuesta = patron.test(nom);// TEST REFIERE A UN METODO DENTRO DE LAS EXPRESIONES REGULARES
+			if(respuesta == true) { 
+				alert("correcto");
+			} else {
+				alert("incorrecto");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="" name="Formidable">
+		<fieldset>
+			<legend>Datos</legend>
+
+			<label for="">Nombre</label>
+			<input type="text" name="nombre" title="Primera en mayusculas" style="width: 150px;">
+			<input type="button" value="Verificar" onclick="testeo();">
+		</fieldset>
+	</form>
+</body>
+</html>

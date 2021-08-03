@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+		<script>
+		/*
+        entrar un listado de contraseñas y usuarios. Buscar si está en ese listado el usuario Pedro con contraseña 12345. En la salida aparecerá si está o no ese usuario.
+		*/
+
+		var lista1, lista2, user, pass, res, res1, accion, answer, response = false;
+		lista1 = new Array();
+		lista2 = new Array();
+
+		user = prompt("ingrese el usuario");
+		lista1[0] = user;
+		pass = prompt("ingrese la contraseña");
+		lista2[0] = pass;
+		res = prompt("desea ingresar otro usuario?");
+		if(res == 'si') {
+			response = true;
+		} else {
+			prompt("adeu...");
+		}
+
+		///   WHILE ///
+
+		//document.write(res);
+		while(true) {
+			user = prompt("ingrese el usuario");
+			lista1[lista1.length] = user;
+			pass = prompt("ingrese la contraseña");
+			lista2[lista2.length] = pass;
+			res = prompt("desea ingresar otro usuario?");
+		        if(res == 'si') {
+			       response = true;
+		          } else {
+			          prompt("adeu...");
+			          break;
+		          }		
+		}
+		//  RECUPERAR CONTRASEÑA
+
+		res1 = prompt("desea ejecutar alguna opcion: recuperar, buscar?");
+
+		switch(res1) {
+			case "recuperar".toLowerCase():
+				user = prompt("ingrese el usuario").toLowerCase();
+				for(i = 0; i < lista1.length; i++) {
+					if(user == lista1[i]) {
+						alert("usuario registrado, su contraseña es " + lista2[i]);
+					}
+				}
+				break;
+			case "buscar".toLowerCase():
+				answer = prompt("desea buscar por usuario, contraseña u ambos?");
+				if(answer.toLowerCase() == "usuario") {
+					user = prompt("ingrese el usuario").toLowerCase();
+					for(i = 0; i < lista1.length; i++) {
+						if(user == lista1[i]) {
+						alert("usuario registrado");
+					}
+				}
+				}  else if(answer.toLowerCase() == "contraseña") {
+					pass = prompt("ingrese la contraseña").toLowerCase();
+					for(i = 0; i < lista2.length; i++) {
+						if(pass == lista2[i]) {
+						alert("usuario registrado");
+					}
+				}
+				}  else if(answer.toLowerCase() == "ambos") {
+					user = prompt("ingrese el usuario").toLowerCase();
+					pass = prompt("ingrese la contraseña").toLowerCase();
+					for(i = 0; i < lista2.length; i++) {
+						if( user == lista1[i] && pass == lista2[i]) {
+						alert("usuario registrado y es " + user + " contraseña " + pass);
+					}
+				}
+				} else {
+					alert("USUARIO NO REGISTRADO");
+				}
+				break;
+				default:
+				alert("OPCION NO VALIDA");
+
+			}
+		document.write(lista1);
+
+		
+		
+	</script>
+</body>
+</html>

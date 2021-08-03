@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*
+		entrar n números y guardar en un array los pares y en otro los impares. Dar de salida: la cantidad de pares guardados, y la suma de los impares.
+		*/
+
+		var n, num, array1, array2, par=0, impar=0, sum=0;
+		array1 = new Array();
+		array2 = new Array();
+
+		n = parseInt(prompt("indique la cantidad de elementos a alamacenar"));
+
+		for(i = 0; i < n; i++) {
+			num = parseInt(prompt("indique el valor"));
+            if(num % 2 != 0) {    	
+					array2[impar] = num;
+					sum+= array2[impar];
+					impar++;
+               } else {
+               		array1[array1.length] = num;  // se hace uso de la extension del array para usarlo de señalizador de la posicion
+            		par++
+               	}
+            	
+            }
+		
+
+		document.write("la cantidad es pares" + par + "y la suma es igual a" + sum );
+
+		document.write("<p>" + array2 + "</p>");
+		document.write(array1);
+	</script>
+</body>
+</html>

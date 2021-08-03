@@ -1,0 +1,78 @@
+body {	background-color: white;
+		background-image: url("../../../images/img03.jpg");
+		background-repeat: no-repeat;  /* atributo para no repetir la imagen al ocupar el espacio de fondo*/
+		background-attachment: scroll;
+		background-position: center center;
+		background-size: cover; /* atributo para cubir a fondo la cubierta*/
+
+		}
+
+#central {  /*no se debe de ejecutar con la  */
+	width: 700px;
+	height: 900px;
+	background: rgba(255,255,255,0.7);
+	margin: 10px auto;  /*  deja el margen arriba y abajo de 10 pixeles*/
+	border-radius: 35px; /* */
+	padding: 10px;
+	box-shadow: 2px 10px 10px purple;
+
+}
+
+h1 {
+	color: white;
+	font-family:  arial;
+}
+
+h2 {
+	color: purple;	
+	font-family: arial;
+}
+
+
+h3 {
+	color: red;
+	font-family: helvetica;
+	text-align: center;
+	text-shadow: -10px 5px 5px;
+
+}
+
+#menu ul {
+  width: 700px;
+	height: 61px;
+	margin: 0 auto;
+	padding: 0;
+	
+	background-color:purple;
+}
+
+ ul{
+  	margin: 0;
+	padding: 0px 0px 0px 48px;
+	list-style: none;
+	line-height: normal;   /* define la posicion  del menu especificando unicamente a aplicar en la lista contenida con el identificador*/
+}
+
+ li  {
+ 	margin-left:15px;
+	float: left; 
+}
+
+ a{
+	display: block;
+	height: 41px;
+	margin-right: 1px;
+	padding: 20px 20px 0px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: #7E0044 -1px 1px 2px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+}
+
+a:hover {
+	background: url("../../../images/img03.jpg") repeat-x left top;
+	text-decoration: none;
+}

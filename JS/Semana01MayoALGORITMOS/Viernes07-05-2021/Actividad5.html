@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		table {
+			border: 3px solid black;
+		}
+
+		table tr td {
+			background-color: green;
+			margin: 2px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		/*
+		S’introdueixen10 valors sencersper teclat. Esdesitja saber:a) La quantitatde valors negatius.b) La quantitatde valors positius. c) La quantitatde múltiples de 15.d) La suma dels números ingressatsque sónparells.
+		 */
+
+		 var num, nega=0, posi=0, multi=0, suma = 0;
+
+		 for(i = 0; i < 10; i++) {
+		 	num = parseInt(prompt("ingrese valores"));
+		 	if(num < 0) {
+		 		nega++;
+		 	} if(num > 0) {
+		 		posi++;
+		 		} if(num % 15 == 0) {
+		 			multi++;
+		 		} if (num % 2 == 0) {
+		 			suma+= num;
+		 		}
+		 }
+
+		 document.write("<table><tr><td> los valores negativos : " + nega + "</td></tr><tr><td>valores positivos  " + posi + "</td></tr><tr><td> multiplos de 15 " + multi + "</td></tr><tr><td> suma de pares " + suma + "</td></tr><table>");
+	</script>
+</body>
+</html>

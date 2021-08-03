@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- Programa que demande una contraseña hasta indicar la correcta. maximo 3 intentos-->
+
+	<script>
+		var contra, conta = 0, password = "contraseña";
+
+		contra = prompt("ingrese la contraseña recuerde que solo dispone de 3 intentos");
+
+		while(contra != password) {
+			conta++;
+            if(conta < 3) {
+			contra = prompt("ingrese la contraseña recuerde que solo dispone de 3 intentos");
+			} else {
+				alert("USUARIO BLOQUEADO");
+			}
+		}
+		alert("USUARIO VALIDADO");
+		
+
+	</script>
+</body>
+</html>

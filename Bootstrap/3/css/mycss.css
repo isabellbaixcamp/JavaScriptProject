@@ -1,0 +1,15 @@
+#myhomeimg{
+	height:350px; 
+	background: url('../img/bg-bot.jpg') no-repeat; 
+	background-size: cover;
+	background-position: center top;
+}
+
+#mylogo{
+	width: 100px;
+	height: 100px;
+}
+
+aside.col-sm-4{
+	border-left: 1px solid #CCC;
+}

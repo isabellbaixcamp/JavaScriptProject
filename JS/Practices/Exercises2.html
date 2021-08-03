@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		/* Desarrollar un programa que solicite la carga de 10 números, que aparezcan en un párrafo y que en otro aparezca el promedio de los valores ingresados.*/
+
+		function carga() {
+			
+			var cad = "";
+			var cont = 0;
+			var sum = 0;
+			var prom = 0;
+			do {
+				var num = parseInt(prompt("indique el numero"));
+				cont++;
+				cad+= num + "-";
+				sum+= num;
+				
+			}while(10 > cont);
+
+			prom = sum / 10;
+
+			document.getElementById('uno').innerHTML = " los valores ingresados han sido  " + cad;
+
+			document.getElementById('dos').innerHTML = " y el promedio de los mismos es " + prom;
+		}
+	</script>
+</head>
+<body>
+	<h1>CARGA DE NUMEROS</h1>
+
+	
+
+	<p>Desea la carga de 10 numeros? presione el siguiente botton</p>
+
+	<p id="uno"></p>
+	<button onclick="carga();">cargaNum</button>
+
+	<p id="dos"></p>
+
+</body>
+</html>

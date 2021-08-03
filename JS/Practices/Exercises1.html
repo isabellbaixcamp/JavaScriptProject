@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		/* Tener diferentes botones (suma,resta,multiplicar,dividir)
+
+			a partir de los cuales te piden dos números y el resultado aparece en un párrafo del documento
+		*/
+
+		function suma() {
+			var num1 = parseInt(prompt("num 1"));
+			var num2 = parseInt(prompt("num 2"));
+			var aux = num1 + num2;
+
+			document.getElementById('responde').innerHTML = "la suma es igual a : " + aux;
+		}
+
+		function resta() {
+			var num1 = parseInt(prompt("num 1"));
+			var num2 = parseInt(prompt("num 2"));
+			var aux = num1 - num2;
+
+			document.getElementById('responde').innerHTML = " la resta es igaul a " + aux;
+		}
+
+		function multiplica() {
+			var num1 = parseInt(prompt("num 1"));
+			var num2 = parseInt(prompt("num 2"));
+			var aux = num1 * num2;
+
+			document.getElementById('responde').innerHTML = " la multiplicacion es igaul a " + aux;
+
+		}
+
+
+		function divide() {
+			var num1 = parseInt(prompt("num 1"));
+			var num2 = parseInt(prompt("num 2"));
+			var aux = num1 / num2;
+
+			document.getElementById('responde').innerHTML = " la division es igaul a " + aux;
+
+		}
+	</script>
+</head>
+<body>
+	<h1> MULTIPLES BOTONES, MULTIPLES OPCIONES</h1>
+	
+	<p id="responde"></p>
+
+	<button onclick="suma();">suma</button>
+
+	<button onclick="resta();">resta</button>
+
+	<button onclick="multiplica();">multiplica</button>
+
+	<button onclick="divide();">divide</button>
+</body>
+</html>

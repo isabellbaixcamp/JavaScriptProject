@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- SE REFERENCIA A BOOTSTRAP-->
+	<script>
+		function sayHello() {
+			var name = prompt("indique su nombre");
+			document.getElementById('name').innerHTML+= "Hola extraño, " + name;
+		}
+	</script>
+
+	<style>
+		#jumbo {
+			background-color: pink;
+			border: 2px solid black;
+		}
+
+		#barra {
+			background-color: purple;
+		}
+
+		#name {
+			font-size: 25px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron" id="jumbo">
+			<h1>Hola</h1>
+		</div>
+	
+	
+
+	<!-- NAVBAR-->
+		<nav class="navbar navbar-inverse" id="barra">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="#">CheckOut</a>
+    			</div>
+    				<ul class="nav navbar-nav">
+     					<li class="active"><a href="#">Home</a></li>
+      					<li><a href="#">uno</a></li>
+      					<li><a href="#">dos</a></li>
+    				</ul>
+    			<button class="btn btn-danger navbar-btn" onclick="	sayHello();">Button</button>
+  			</div>
+		</nav>
+
+		<div id="name"></div>
+	</div>
+	<!-- SIEMPRE SE HA DE SEGUIR EL ORDEN QUE SIGUE: REF A JQUERY Y LUEGO A JS PARA LA CARGA DEL DOM Y EL DINAMISMO DE LA PAGINA-->
+	<!-- jquery-->
+	<script src="js/jquery.js"></script>
+		<!-- jquery-->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var pass;
+		do {
+          pass = prompt("introduce la contraseña");
+		} while(pass != "papepi123");
+
+		alert("bienvenido");
+
+	</script>
+	<script>
+		/* programa que pregunte si vas a seguir jugando*/
+		var respuesta;
+
+		do { // realiza la orden
+           respuesta = prompt("desea seguir jugando");
+		} while(respuesta != 'no');  // no sea no
+
+		alert("Adeu...");
+	</script>
+	<script>
+		//numeros que no sean 0
+
+		var num, sum = 0;
+
+		do {
+			num = parseInt(prompt("ingrese num"));
+			sum += num;
+		} while(num != 0);
+
+		alert("la suma de los numeros es" + sum); 
+	</script>
+	<script>
+		// contraseña valida y 3 intentos
+		var cont = 1, pass;
+
+		do {
+			pass = prompt("introduzca la contraseña");
+			 if(pass == 'papepi123') {
+				alert("USUARIO VALIDADO");
+				break;
+			}if(cont == 3) {
+				alert("se ha excedido en intentos");
+				break;
+			}
+			cont++;
+			
+		} while(pass != 'papepi123');
+
+	</script>
+	<script>
+
+		var num, sum = 0;
+
+		do {
+			num = parseInt(prompt("ingrese num"));
+			sum += num;
+		} while(num != 0);
+
+		alert("la suma de los numeros es" + sum); 
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		    var user, pass, user1 = "Lola", user2 = "Luis", pass1 = "mariposa3", pass2 = "papallona6", choice, num1, num2, sum = 0;
+
+		    user = prompt("introduzca el usuario");
+			pass = prompt("ingrese contraseña");
+
+			while(user == user1.toLowerCase() && pass == pass1.toLowerCase() || user == user2.toLowerCase() && pass == pass2.toLowerCase()) {
+                 alert("RIGHT");
+                num1 = parseInt(prompt(" indique el numero 1 para operar"));
+        	    num2 = parseInt(prompt(" indique el numero 2 para operar"));
+                choice = prompt("que operacion desea : suma, resta, multiplicar o dividir?");
+        	    switch (choice) {
+        		case "suma".toLowerCase():
+                    sum = (num1 + num2);
+                    break;
+                case "resta".toLowerCase():
+                    sum = num1 - num2;
+                    break;    
+                case "multiplicar".toLowerCase():
+                    sum = num1 * num2;
+                    break; 
+                case "dividir".toLowerCase():
+                    sum = num1 / num2;
+                    break;
+                    default:
+                    sum = "valores no admitidos"
+        	}
+            break;
+            
+			}
+        alert("la eleccion es " + choice + " y el resultado es" + sum);
+       
+	</script>
+</body>
+</html>

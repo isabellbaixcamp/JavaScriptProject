@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div#box1 {
+			border: 3px solid yellow;
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			animation-name: box_one;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+			position: relative;
+
+
+		}
+
+		@keyframes box_one {          /* CON LAS PROPIEDADES HEREDADAS DEL RELATIVE POSITION, se pueden manipular el desplazamiento de los frames*/
+			0% {background-color: yellow; text-shadow: 10px 10px 3px orange,-10px -10px 3px pink, 80px 30px 5px magenta; border-radius: 10px; left: 0px; top: 0px;}
+			25% {background-color: blue;left: 100px; top: 40px;}
+			50% {background-color: pink;left: 30px; top: 80px;}
+			100% {background-color: red;left: 0px; top: 0px;}
+		}
+		div#box2 {
+			border: 3px solid black;
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			animation-name: box_two;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			position: relative;
+		}
+
+		@keyframes box_two {          /* CON LAS PROPIEDADES HEREDADAS DEL RELATIVE POSITION, se pueden manipular el desplazamiento de los frames*/
+			0% {background-color: pink; text-shadow: 10px 10px 3px orange,-10px -10px 3px pink, 80px 30px 5px magenta; border-radius: 50px; left: 0px; top: 0px;}
+			25% {background-color: blue;left: 100px; top: 40px; border-radius: 25px;}
+			50% {background-color: pink;left: 30px; top: 80px;}
+			100% {background-color: red;left: 0px; top: 0px;}
+		}
+
+		div#box3{
+			border: 3px solid black;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			background-color: red;
+			animation-name: box_three;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			position: relative;
+		}
+
+		@keyframes box_three {          /* CON LAS PROPIEDADES HEREDADAS DEL RELATIVE POSITION, se pueden manipular el desplazamiento de los frames*/
+			0% {background-color: yellow; text-shadow: 10px 10px 3px orange,-10px -10px 3px pink, 80px 30px 5px magenta; border-radius: 80px; left: 0px; top: 0px;}
+			25% {background-color: blue;left: 600px; top: 200px;10px 10px 3px orange,-10px -10px 3px pink, 80px 30px 5px magenta;}
+			50% {background-color: pink;left: 1800px; top: 800px;}
+			100% {background-color: red;left: 0px; top: 0px;}
+		}
+		div#box4 {
+			border: 3px solid black;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			background-color: red;
+			animation-name: box_four;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			position: relative;
+		}
+
+		@keyframes box_four {          /* CON LAS PROPIEDADES HEREDADAS DEL RELATIVE POSITION, se pueden manipular el desplazamiento de los frames*/
+			0% {background-color: brown; text-shadow: 10px 10px 3px orange,-10px -10px 3px pink, 80px 30px 5px magenta; border-radius: 100px; left: 400px; top: 200px;}
+			25% {background-color: blue;left: 100px; top: 40px;border-radius: 100px;border-radius: 100px;}
+			50% {background-color: pink;left: 30px; top: 80px;}
+			100% {background-color: red;left: 100px; top: 400px;border-radius: 100px;}
+		}
+	</style>
+</head>
+<body>
+	<div id="box1"></div>
+	<div id="box2"></div>
+	<div id="box3">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error obcaecati labore sed harum non odit ea magni eveniet! Harum totam possimus dolore error similique rem quidem dolores aliquid quasi. Quaerat.</p>
+	</div>
+	<div id="box4"></div>
+</body>
+</html>

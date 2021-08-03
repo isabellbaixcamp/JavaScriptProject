@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/* 
+         nota de 4 alumnos de dos trimestres, devolver nota media del primer alumno cada trimestre
+
+		*/
+
+		var media1 = 0, media2 = 0;
+        var note1 = new Array(4);
+        var note2 = new Array(4);
+        var alumne = new Array(4);
+
+        for(i = 0; i < note1.length; i++) {
+        	alumne[i] = prompt("ingrese nombre");
+        	note1[i] = parseFloat(prompt("ingrese nota semestre 1"));
+        	note2[i] = parseFloat(prompt("ingrese nota semestre 2"));
+
+        }
+
+        document.write("la nota es " + note1.length);
+
+/*
+
+
+        for(i = 0; i < note1.length; i++) {         
+             	alumne[i] = prompt("indique el nombre");
+             	note1[i] = parseInt(prompt("nota primer trimestre"));
+             	note2[i] = parseInt(prompt("notasegundo trimestre"));
+                media1 = media1 / not1[i].length;
+                media2 = media2 / note2[i].length;
+             }
+        
+
+
+        document.write("la media del primer alumno es " + (note1[0] + note2[0] / 2) + " y la media de notas del primer trimestre es " + media1 + " y del segundo " + media2); 
+	</script>
+</body>
+</html>

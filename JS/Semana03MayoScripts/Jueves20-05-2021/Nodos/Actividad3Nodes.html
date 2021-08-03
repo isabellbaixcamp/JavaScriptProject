@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	<script>
+		function borra() {
+			var elimina = document.getElementById('par3');
+			//var erased = document.;
+		 
+		 	elimina.deleteChild();
+		}
+
+		function reemplaza() {
+			var replace = document.getElementById('dividi');
+			var porEl = document.getElementById('par2');
+			var auxNew = document.createElement('p');  // hace uso de variables auxilialers para el uso de la funcion replace.
+			var textNew = document.createTextNode('nuevo texto');
+			auxNew.appendChild(textNew);
+			replace.replaceChild(auxNew, porEl);
+		}
+	</script>
+
+
+</head>
+<body>
+	<div id="dividi">
+		<p>Parrafo1</p>
+		<p id="par2">Parrafo2</p>
+		<p id="par3">Parrafo3</p>
+		<p>Parrafo4</p>
+
+	</div>
+	<button onclick="borra();">Borrar</button><!-- borra el tercer elemento -->
+	<button onclick="reemplaza();">Reemplazar</button><!-- cambia el segundo elemento por uno nuevo (p que ponga el nuevo texto)-->
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<libreria> 
+<libro>
+ <titulo>Don Juan Tenorio</titulo>
+  <autor>José Zorrilla</autor>
+  <genero>teatro clásico</genero>
+  <año>1844</año>
+
+</libro>
+
+<libro>
+  <titulo>País de las maravillas</titulo>
+  <autor>Juanjo</autor>
+  <genero>teatro</genero>
+  <año>1844</año>
+</libro>
+</libreria>

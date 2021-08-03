@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/* Definir los selectores necesarios para  aplicar el css siguiente*/
+
+	/* a los parrafos de la clase fuente*/
+	p.fuente{ font: 1em/1.3 Arial, Helvetica, sans-serif; }
+
+	/* a las cabeceras h1 con clase gris */
+	h1.gris{ color: #555; }
+
+	/* a los links de la clase azul contenidos en parrafos*/
+	div.azul p a{ color: #336699; } /* SOLUCION  p a.azul*/
+
+	/* A los términos de lista contenidos en un div */
+	div.TablaColor #terminos li{ color: #CC3300; }
+
+	/* A las tablas contenidas en los div de la clase TablaColor*/
+	div.TablaColor table{ background: #FFFFCC; padding: .1em; }
+
+	/* Todos los elementos li de las listas ordenadas  */
+	ol li{ background: #FFCC99; border: 1px solid #FF9900; padding: .1em; }
+
+	/* Elementos a contenidos en p de la clase negrita*/
+ 	div.negrita p a{ font-weight: bold; } /* SOLUCION p.negrita a*/
+	</style>
+</head>
+<body>
+	
+	<h1> Mi primer esbozo</h1>
+
+	<p class="fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, consequuntur. Quasi molestias nostrum commodi cupiditate alias nemo reprehenderit error pariatur obcaecati, voluptatibus, sunt iste fugit, temporibus dicta cum illo, quisquam?</p>
+
+	<p class="fuente">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi provident impedit ut ea in ex, accusamus accusantium, necessitatibus aliquam modi quaerat, amet omnis cum quis repellendus? Architecto ipsum animi in.</p>
+	<p>Repellat vel esse, tempora corporis, sit quasi eligendi at eveniet distinctio, non omnis ipsum quae similique autem ratione. Illo, harum perspiciatis quo libero quis earum eligendi odio repudiandae quae hic.</p>
+
+	<h1 class="gris"> CSS lenguaje</h1>
+	<p>Repellat vel esse, tempora corporis, sit quasi eligendi at eveniet distinctio, non omnis ipsum quae similique autem ratione. Illo, harum perspiciatis quo libero quis earum eligendi odio repudiandae quae hic.</p>
+	<h1> HTML etiqueta</h1>
+	<div class="azul">
+	<p>Repellat vel esse, tempora corporis, sit quasi eligendi at eveniet distinctio, non omnis ipsum quae <a href=""> link tempora corporis </a>similique autem ratione. Illo, harum perspiciatis quo libero quis earum eligendi odio repudiandae quae hic.</p>
+	</div>
+	<h1 class="gris"> APLICACIONES</h1>
+	<p>Repellat vel esse,  link tempora corporis  , sit quasi eligendi at eveniet distinctio, non omnis ipsum quae similique autem ratione. Illo, harum perspiciatis quo libero quis earum eligendi odio repudiandae quae hic.</p>
+
+	<div class="TablaColor">
+		<article id="terminos">
+			<table border="2">
+				<tr>
+					<ul>
+						<li> alfa 1</li>
+					</ul>
+				</tr>
+				<tr>
+					<ul>
+						<li> alfa 2 </li>
+					</ul>
+				</tr>
+				<tr>
+					<ul>
+						<li> alfa3</li>
+					</ul>
+				</tr>
+			</table>
+		</article>
+	</div>
+
+	<div>
+		<section>
+			<ol>
+				<li> Independientes</li>
+			</ol>
+			<ol>
+				<li> Ternario</li>
+			</ol>
+			<ol>
+				<li> Stendhal</li>
+			</ol>
+		</section>
+	</div>
+
+
+	<div class="negrita">
+	<p>Lorem ipsum dolor sit amet <a href=""> consectetur </a> adipisicing elit. Reiciendis ut provident vero quas. Eligendi sed iusto omnis ut nam. Dicta adipisci vitae, debitis. Laboriosam aut ex quo in sapiente! Deleniti?</p>
+	<br>
+	<br>
+	<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Et, <a href="">saepe optio, sunt enim culpa sint soluta</a>, aut voluptatem quasi ipsum cumque voluptatibus, fuga eveniet voluptas! Quae provident est natus, obcaecati?</p>
+	</div>
+
+</body>
+</html>

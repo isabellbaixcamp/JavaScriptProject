@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		/* En una empresa de transport, es vol dissenyar una aplicació que un cop ingressada la ciutat i el preu de la comanda em digui el cost total del transport amb l’iva inclòs.  
+		L’aplicació demana el total del preu a pagar sense iva i la ciutat,  i retorna mitjançant un missatge d’alerta (un quadre d’avís) el preu final amb iva (15%) ,tenint en compte les següents tarifes:
+*/
+	function calcula() {
+		
+		var final = 0;
+		var city = prompt("indique la ciudad?").toLowerCase();
+
+		if(city == 'barcelona' || city == 'girona' || city == 'tarragona' || city == 'lleida') {
+			var num = parseFloat(prompt("indique la tarifa"));
+			switch (city) {
+				case 'barcelona':
+					final = num + 10.20;
+					document.getElementById('tarifa').innerHTML = "La ciudad es " + city + " y la tarifa final es igual a " + (final +(final * 15) / 100).toFixed(2) ;//(final * 15) / 100;
+				break;
+				case 'girona':
+					final = num + 14.40;
+					document.getElementById('tarifa').innerHTML = "La ciudad es " + city + " y la tarifa final es igual a " + (final +(final * 15) / 100).toFixed(2);
+				break;	
+				case 'tarragona':
+					final = num + 12.50;
+					document.getElementById('tarifa').innerHTML = "La ciudad es " + city + " y la tarifa final es igual a " + (final +(final * 15) / 100).toFixed(2);
+				break;
+				case 'lleida':
+					final = num + 13.70;
+					document.getElementById('tarifa').innerHTML = "La ciudad es " + city + " y la tarifa final es igual a " + (final +(final * 15) / 100).toFixed(2);
+				break;
+				default:
+					document.getElementById('tarifa').innerHTML = "Datos Incorrectos";
+				break;
+			}
+		} else {
+			document.getElementById('tarifa').innerHTML = "La ciudad que ha indicado no se encuentra en el territorio donde prestamos servicio, Adeu";
+		}
+	}
+	</script>
+</head>
+<body>
+	<h1>Precio de Tarifas</h1>
+	<br>
+	<table border="2px";>
+		<tr>
+			<td>Ciudad</td>
+			<td>Preu</td>
+		</tr>
+		<tr>
+			<td>Barcelona</td>
+			<td>10,20 euros</td>
+		</tr>
+		<tr>
+			<td>Girona</td>
+			<td>14,40 euros</td>
+		</tr>
+		<tr>
+			<td>Tarragona</td>
+			<td>12,50 euros</td>
+		</tr>
+		<tr>
+			<td>Lleida</td>
+			<td>13,70 euros</td>
+		</tr>
+	</table>
+
+
+	<button onclick="calcula();">calcula</button>
+	<p id="tarifa"></p>
+</body>
+</html>

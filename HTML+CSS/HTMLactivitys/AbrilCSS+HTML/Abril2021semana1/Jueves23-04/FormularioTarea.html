@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+    <table>
+    <tr>
+	<td colspan="3"><h1><center>Suscripcion Electronica</center></h1>
+	</tr>
+	<br>
+	<br>
+	</td>
+	<tr>	
+	<td colspan="3"> Nota: Este es un formulario de ejemplo en el que los datos aqui escritos se trasladan a otra pagina</td>
+	</tr>	
+	<br>
+	<br>
+	<tr>
+			<td>
+				<label for="name"> Nombre:</label> <!-- insercion de labels text-->
+		        <input type="text" id="name">
+			</td>
+			<td>
+				<label for="cognom"> Apellidos:</label>
+		        <input type="text" id="cognom">
+			</td>
+			<td>
+				<label for="email"> e-mail:</label>
+		        <input type="text" id="cognom">
+			</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="password"> contraseña:</label>
+		    <input type="text" id="password">
+		</td>
+		<td colspan="2">  </td>
+	</tr>
+	<tr>
+		<td> <!-- insercion de tabla dentro de celda para ordenar de mejor forma -->
+			<table>
+				<tr>
+					<td> 
+				 		<label for=""> Sexo</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="sex"/> Varon
+					</td>
+				</tr> 
+				<tr>
+					<td>
+						<input type="radio" name="sex"/> Mujer
+					</td>
+				</tr>
+		    </table>
+		</td>
+
+		<td> 
+			<table>
+				<tr><!-- insercion de table con celda de tipo label para la eleccion del radio-->
+					<td>
+						<label for=""> Nivel de estudios</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type="radio" name="school"/> Certificado escolar<!-- inputs con el mismo nombre para que especifica la necesidad de 1 sola eleccion-->
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="school"/> Graduado E.S.O
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="school"/> Bachiller - Formacion Profesional
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="school"/> Diplomado
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="school"/> Licenciado o Doctorado
+					</td>
+				</tr>
+			</table>
+			
+		 </td>
+		<td> 
+			<table>
+				<tr>
+					<td>
+						<label for="Intereses"> Interesado en los siguientes temas:</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox"/> Musica<!-- insercion del checkbox-->
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox"/> Deportes
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox"/> Cine
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox"/> Libros
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox"/> Ciencia
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3"> Dia de la semana que le interesa recibirlo:</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="week" name="dia de la semana"/>
+		</td>
+	</tr>
+	<tr>
+		<td> 
+			<label for="opinion"> Su opinion: </label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<textarea name="" id="" cols="30" rows="10">...</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="submit" value="Comprobar el formulario"><!-- insercion del submit para comprobar datos en el servidor-->
+		</td>
+		<td>
+			<input type="reset" value="borrar todo"><!-- insercion de reset para eliminar el formulario-->
+		</td>
+	</tr>
+	
+	</table>
+</body>
+</html>

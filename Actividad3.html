@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript">
+	function testear() {
+
+         var s=true;
+		 
+		
+        //comprovar nom
+         elnombre = document.formu.nom.value; 
+         patronNombre = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
+         compNombre = patronNombre.test(elnombre);
+         if(compNombre==false) {  document.formu.nom.style.borderColor="red"; s=false;}
+		 else { document.formu.nom.style.borderColor="green";}
+		 
+		  //comprovar cognom
+         elcognom = document.formu.cognom.value; 
+         patronCognom = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
+         compCognom = patronCognom.test(elcognom);
+         if(compCognom==false) {  document.formu.cognom.style.borderColor="red"; s=false;} else { document.formu.cognom.style.borderColor="green";}
+         
+		//comprovar telèfon
+         telefono = document.formu.tel.value;
+         patronTel = /^[9|6]{1}([\d]{2}[-]*){3}[\d]{2}$/;
+         compTel = patronTel.test(telefono);
+       if(compTel==false)   {document.formu.tel.style.borderColor="red";s=false;}
+	       else { document.formu.tel.style.borderColor="green";}
+         //comprovar correu
+         correo = document.formu.mail.value;
+         patronEmail = /^[\w]+@{1}[\w]+\.+[a-z]{2,3}$/;
+         compEmail = patronEmail.test(correo);
+        if(compEmail==false)   {document.formu.mail.style.borderColor="red";s=false;} else { document.formu.mail.style.borderColor="green";}
+	  /* Entre 8 y 10 caracteres, por lo menos un digito y un alfanumérico, y no puede contener caracteres especiales*//(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$/;
+     
+		
+		  //comprovar contraseña
+         contra = document.formu.pwd.value;
+         patronPwd = /(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$/;
+         compPwd = patronPwd.test(contra);
+        if(compPwd==false)   {document.formu.pwd.style.borderColor="red";s=false;}
+	         else { document.formu.pwd.style.borderColor="green";}
+			 
+		
+		//comprovar contraseña repetida
+
+	     if(document.formu.pwd.value!=document.formu.reppwd.value)
+		 {document.formu.reppwd.style.borderColor="red";
+		      s=false;}
+		 
+		 
+		 //comprovar edad
+	     edades = document.formu.edad.value;
+         patronEdad = /^[\d]{1,2}$/;
+         compEdad = patronEdad.test(edades);
+        if(compEdad==false|| edades<18 )  
+		{document.formu.edad.style.borderColor="red";s=false;}
+	         else { document.formu.edad.style.borderColor="green";}
+	
+	
+			  //comprovar cd
+         codiPostal = document.formu.cd.value;
+         patronPostal =/^[0-9]{5}$/;
+         compPostal = patronPostal.test(codiPostal);
+       
+	   if(compPostal==false)   {document.formu.cd.style.borderColor="red";s=false;}
+	         else { document.formu.cd.style.borderColor="green";}
+			 
+	
+
+	
+		 if(s==true){
+
+         alert("Sus datos se enviarán correctamente");
+		 document.formu.submit();
+		 
+		 }
+		 else {
+		 
+		    			
+			
+			document.formu.check.checked = false;
+		    document.formu.enviar.disabled=true;
+	
+		 }
+		 }
+</script>
+</head>
+
+<body  onload="document.getElementById('enviar').disabled=true;" >
+
+<div class="container">
+  <h2>Formulari Horizontal</h2>
+  <form class="form-horizontal" role="form" style="margin-top:30px;" name="formu" action="archivo.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="nom">Nom:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="nom" name="nom" placeholder="Name" 
+		onfocus="this.value='';this.style.borderColor='';" autofocus>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="cognom">Cognom:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="cognom" name="cognom" placeholder="Cognom">
+      </div>
+    </div>
+	
+	    <div class="form-group">
+      <label class="control-label col-sm-2" for="mail">Email:</label>
+      <div class="col-sm-10">          
+        <input type="mail" class="form-control" id="mail"name="mail" placeholder="correo@gmail.com">
+      </div>
+    </div>
+	    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="pass
+		word" class="form-control" id="pwd" name="pwd" placeholder="8 letras y num">
+      </div>
+    </div>
+	    <div class="form-group">
+      <label class="control-label col-sm-2" for="reppwd">Rep Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="reppwd" name="reppwd" placeholder="Repe Contra">
+      </div>
+    </div>
+	    <div class="form-group">
+      <label class="control-label col-sm-2" for="cd">Codi Postal:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="cd" name="cd" placeholder="00000">
+      </div>
+    </div>
+	    <div class="form-group">
+      <label class="control-label col-sm-2" for="tel">Telf:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="tel" name="tel" placeholder="000000000">
+      </div>
+    </div>
+	 <div class="form-group">
+      <label class="control-label col-sm-2" for="edad">Edat:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="edad" name="edad" placeholder="Edat">
+      </div>
+    </div>
+	
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox"><a href="	">Política de privacitat</a>
+          <label>
+		  
+		  <input type="checkbox" name="check" onclick="document.getElementById('enviar').disabled=(document.getElementById('enviar').disabled==false)? true:false; "> Accepto condicions</label>
+		  
+        </div>
+      </div>
+    </div>
+	
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+	  
+        <input type="button" id="enviar"class="btn btn-primary" value="Enviar"onclick="testear()" >
+    
+	</div>
+    </div>
+  </form>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

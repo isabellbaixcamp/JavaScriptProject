@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		table, tr, td {
+			border: 3px solid black;
+		}
+
+
+	</style>
+</head>
+<body>
+	<script>
+	/*
+	Realitzar un programa que mostri en una pàgina HTML el teu nom i la edatque tindràs dintre de 10 anys. Tenir en compte que si volem que cada dada quedi en una fila diferent s’ha d’inserir el salt de línia en HTML. */
+
+	var nom, edad;
+
+	nom = prompt("indique su nombre");
+	edad = parseInt(prompt("indique su edad"));
+
+	document.write("Su nombre es : <table><tr><td> " + nom + "</td></tr><tr><td> edad " + (edad + 10) + "</td></tr></table>" );
+
+
+	</script>
+</body>
+</html>

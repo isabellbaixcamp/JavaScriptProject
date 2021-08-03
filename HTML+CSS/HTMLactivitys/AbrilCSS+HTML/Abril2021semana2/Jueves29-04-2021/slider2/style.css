@@ -1,0 +1,259 @@
+
+/*********** Estilos generales ******************/
+
+body{
+	background-color: #DFDFDF;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 0px;
+}
+
+/*********** Estilos Contenedor ******************/
+
+#container{
+	position: relative;
+	width: 720px;
+	margin:0px auto;
+}
+
+/*********** Estilos Cabecera *********************/
+
+#header{
+	background: -webkit-linear-gradient(top,#85C2FF,#246BB2);
+	background: -moz-linear-gradient(top,#85C2FF,#246BB2);
+	padding: 20px 30px;
+	color:white;
+}
+#header h1{
+	text-shadow:0px 5px 5px black;
+}
+
+#header p{
+	font-size: 18px;
+	font-style: italic;
+	padding-left: 25px;
+	color:#E6E6E6;
+}
+
+/************ Estilos Menu ********************/
+
+#nav{
+	background:#3278ED;
+}
+
+#nav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 15px 0px;
+	text-align: center;
+	
+}
+
+#nav ul li{
+	display: inline;
+	padding: 0px 20px;
+}
+
+#nav ul li a{
+	text-decoration: none;
+	color:white;
+	font-size:18px;
+	padding: 15px 8px 15px 8px;
+}
+
+#nav ul li a:hover{
+	background-color: #188DED;
+	box-shadow: 0px 0px 4px white inset;
+	transition:all 2s;
+}
+
+#nav ul li a:active{
+	background-color: white;
+	color:orange;
+	box-shadow: 0px 0px 4px orange inset;
+	transition:all 2s;
+}
+
+/*************** Estilos Main ********************/
+
+.samesize{
+	width: 200px;
+	height: 320px;
+	padding: 20px;
+	float: left;
+}
+
+.samesize h3{
+	text-transform: uppercase;
+	color: white;
+	text-align: right;
+}
+          /********** Estilos columnas ************/
+
+#col1{
+	background: -webkit-linear-gradient(top,#9C9CD8,#5E5E82);
+	background: -moz-linear-gradient(top,#9C9CD8,#5E5E82);
+	position: relative;
+}
+         /************ Estilos box *******************/
+
+#col1 div{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+}
+
+#box1{
+	border:2px solid black;
+	top:70px;
+	left: 35px;
+	border-radius: 5px;
+}
+ 
+#box2{
+	border:4px dashed blue;
+	top:120px;
+	left: 135px;
+}
+
+#box3{
+	border:4px inset white;
+	top:180px;
+	left: 65px;
+	border-radius: 40px;
+}
+
+#box4{
+	border:10px double orange;
+	top:220px;
+	left: 155px;
+}
+
+#col2{
+	background: -webkit-linear-gradient(top,#E0A166,#CC6200);
+	background: -moz-linear-gradient(top,#E0A166,#CC6200);
+	position: relative;
+}
+     /************ Estilos lista *****************/
+
+#col2 ul{
+	list-style-type: none;
+	list-style-image: url('img/share.png');
+	list-style-position: inside;
+	text-transform: capitalize;
+	font-size: 20px;
+	line-height: 30px;
+	font-style: italic;
+}
+
+#col2 ul li{
+	color:green;
+	text-decoration: underline;
+}
+
+#col3{
+	background: -webkit-linear-gradient(top,#8D8DAB,#5A5A78);
+	background: -moz-linear-gradient(top,#8D8DAB,#5A5A78);
+	position: relative;
+	color:white;
+    word-spacing:20px;
+	text-align: justify;
+}
+         /***** Estilos texto ************************/
+
+.text1{
+	color:green;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px white;
+	font-weight: bold;
+
+}
+
+.text2{
+	color:red;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px white;
+
+}
+
+.text3{
+	color:yellow;
+	font-style: italic;
+	text-shadow: 1px 1px 5px white;
+}
+
+.text4{
+	color:orange;
+	font-variant: small-caps;
+	text-shadow: 1px 1px 3px white;
+}
+
+
+/************* Estilos Slider *******************/
+
+div#slider {
+	clear:both;
+	width: 720px;
+	height: 250px;
+	background-image: url("../../../../../images/bolt.jpg"),
+					  url("../../../../../images/watter.jpg"),
+					  url("../../../../../images/fire.jpg");
+
+	background-repeat: no-repeat;
+
+	/* animation*/
+
+	animation-name: movie;
+	animation-duration: 5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+
+}
+
+#slider p{display: none;}
+
+
+@keyframes movie{
+	0%{  /* se posicionan en el plano cartesiano*/
+		background-position: 0px 0px,
+							-720px 0px,
+							-1440 0px;
+	}
+	50%{
+		background-position: 720px 0px,
+							 0px 0px,
+							-720 0px;
+	}
+	100%{
+		background-position: 1440px 0px,
+							 720px 0px,
+							  0px 0px;
+	}
+}
+/**** Estilos pie de página *********************/
+
+#footer{
+	background: -webkit-linear-gradient(top,#6666FF,#4747B2);
+	background: -moz-linear-gradient(top,#6666FF,#4747B2);
+	word-spacing: 8px;
+	padding: 10px;
+    
+}
+#footer p{
+		color:white;
+		text-align:center;
+		letter-spacing: 5px;
+		font-variant: small-caps;
+
+	}
+
+	#footer p span{
+		font-size: 10px;
+		font-variant: normal;
+		letter-spacing: normal;
+		text-shadow:120px -5px 1px pink,
+		            70px 5px 1px orange,
+		           -20px 12px 2px yellow,
+		           -50px -20px 1px #56EFE0,
+		           50px -10px 1px #4921ED;
+	}

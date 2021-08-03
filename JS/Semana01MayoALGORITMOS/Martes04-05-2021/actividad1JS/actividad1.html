@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#verde{
+			color:green;
+		}
+		.azul {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<p> Crear un programa que ens permeti carregar el nom i l’email d’una persona usuària per teclat, mostrar les dades en la pàgina HTML.</p>
+	<ul>
+		<li>nombre de salida ha de ser en verde</li>
+		<li>el correo ha de salir en azul</li>
+		<li>cada uno en lineas distintas</li>
+	</ul>
+
+	<script>
+		var nombre,mail;
+		nombre = prompt("nombre");
+		email = prompt("mail");
+
+		document.write("<p>Su nombre es <span id= 'verde'>" + nombre + "</span></p><p>  Y su email: <span id= 'azul'>" + mail + "</span></p>");  // se abren dos span para contener los codigos html
+
+	</script>
+
+</body>
+</html>

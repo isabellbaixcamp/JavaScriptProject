@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/* 
+	Escriure un programa que llegeixi 5 nom d’alumnes i els seus noms es desin en una cadena de text per després veure els nom en la página com una llista numerada dins la página.
+		*/
+		var nom, cadena;
+
+		for(i = 0; i < 5; i++) {
+			nom = prompt("ingrese nombre");
+			cadena+= "<ol><li>" + nom + "</li></ol>";
+			
+		}
+		document.write(cadena);
+
+
+
+	</script>
+</body>
+</html>

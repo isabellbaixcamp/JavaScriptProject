@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/* cualquier fuente negrita, cursiva, negrita-cursiva */
+		@font-face {
+			font-family: hello;
+			src: url("../../Fonts/SourceCodePro-MediumItalic-Thin.trf");
+		}
+
+		@font-face {  /*se deben de definir la fuente especifica y delclarar en el font-family o font-style para que aplique la fuente */
+			font-family: hello;
+			src: url("../../Fonts/SourceCodePro-Bold.trf");
+			font-style: bold;
+		}
+
+		p {
+			font-family: hello;
+			
+		}
+
+		h1 {
+			text-align: center;
+			color: purple;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Titulo</h1>
+	<p>Lorem ipsum dolor <strong>sit amet conscing elit.</strong> Delectus optio placeat consequuntur, quia maiores, ectetur adipisimolestias vitae vel. Vero ab eum odio, <i>doloribus delectus et iure,</i> quibusdam provident! Perspiciatis, adipisci, sit.</p>
+	<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Nesciunt, itaque, <span style="font-style: italic;">nihil dolore quae optio tenetur molestias ratione odio</span>, consequatur est voluptatum beatae? Quidem veniam, quam impedit! Ex labore, arcshitecto nam.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia facilis ea, <span style="font-style: italic; font-weight: bold;">culpa sit</span> quos distinctio officiis dolor fugiat, placeat sequi facere quam voluptatem blanditiis illo saepe neque quae consequatur!</p>
+</body>
+</html>

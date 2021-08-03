@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+</head>
+<body>
+	<!-- Enunciado:Prorgama que valide un usuario(Pedro)y una contraseña(pape123)en concreto, mientras no sean los datos correctos no continúa  el programa.Una vez entrada esta persona se le da las siguientes opciones a escoger:
+		1.Raíz cuadrada de un número.
+		2.Potencia de un número (número y potencia).
+		3.Valor  absoluto.
+		4.Logaritmo (natural).Usar la clase Math.
+		Mientras la operación no sea una de esas no se podrá continuar.Sólo en el momento de haber escogido una de las cuatro opciones se pedirán los datos para hacer esa operación.Especificaciones:-Controlar la entrada de usuario (mayúsculas y minúsculas)-Intentar usar el mínimo de variables posibles-Buscar cómo se puede poner el número pi de manera interna en js.-Los resultados  han de tener dos decimales como mucho.-->
+<h1>Operaciones</h1>
+<button onclick="valida(), Menu();">VALIDAR</button>
+
+<p id="validado"> </p>
+
+<!--<form action="" name="accion">
+	<h3>Las opciones para operar son las que siguen</h3>
+	
+	<label for="">Raiz Cuadrada</label>
+	<input type="text" name="raiz"/>
+
+	<label for=""> Potencia de un numero</label>
+	<input type="text" name="potencia"/>
+
+	<label for=""> Valor Absoluto </label>
+	<input type="text" name="absoluto"/>
+
+	<label for=""> Logaritmo </label>
+	<input type="text" name="logaritmo"/>
+</form> -->
+
+<script>
+		var validate = false;
+		function valida() {
+			//let validate = false;
+			let user = prompt("ingrese usuario").toLowerCase();
+			let pass = prompt("ingrese contraseña").toLowerCase();
+				while(user != 'pedro' && pass != 'pape123' && validate != true) {
+					validate = false;
+					let user = prompt("ingrese usuario").toLowerCase();
+					let pass = prompt("ingrese contraseña").toLowerCase();
+					if(validate == true) {
+						//break;
+						document.write("<p>CORRECTO</p>");
+					}
+				}
+
+		}
+		
+		if(validate == true) {
+			document.write("CORRECTO");
+		}
+		
+	</script>
+</body>
+</html>

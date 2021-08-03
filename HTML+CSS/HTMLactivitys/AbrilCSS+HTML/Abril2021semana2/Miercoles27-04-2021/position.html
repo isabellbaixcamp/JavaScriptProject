@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/* Propiedad position, tiene multiples valores:
+		static,relative, absolute y fixed
+		static: por defecto*/
+		div#primero {
+			border: 1px solid blue;
+			/*position: relative;*/
+			width: 200px;
+			display: inline-block;
+		}
+
+
+		div#segundo {
+			border: 1px solid green;
+			background-color: purple;
+			position: absolute;
+			top: 50px;   /* anexando estos valores mueve los elementos relativamente de su posicion, en position: absolute lo saca del codigo; */
+			left: 100px;
+			width: 200px;
+			display: inline-block;
+		}
+
+		div#tercero {
+			border: 1px solid red;
+			width: 200px;
+			display: inline-block;
+			background-color: red;
+		}
+
+		div#quinto img{
+			position: absolute;
+			top: 15px;
+			left: 200px;
+			/*border: 2px solid orange;
+			padding: 5px;
+			width: 300px;*/
+		}
+
+
+
+		/*un contenedor es padre si tiene una position no static */
+	</style>
+</head>
+<body>
+	<h1>titulo</h1>
+	<div id="primero">
+		<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Velit, dolores! Soluta, sed. Beatae, corporis. Quae modi laborum quibusdam sapiente at ad dicta, voluptatem repellendus saepe reiciendis sint quia illum assumenda?</p>
+	</div>
+	<div id="segundo">
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Illum ratione incidunt quia harum nihil alias recusandae, dolorem earum. Rem, corporis sunt distinctio! Reprehenderit, tempora. Aperiam deleniti animi eum dolore eveniet?</p>
+	</div>
+	<div id="tercero">
+		<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Iste tempore non ipsam nemo eum qui odit possimus vero doloremque quaerat aut excepturi repudiandae magnam, laboriosam beatae voluptas necessitatibus voluptatum est.</p>
+	</div>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo saepe iste, eos accusantium laudantium dolor fugiat, commodi, ipsam libero, quod in? Nesciunt similique facere dolores id tempora omnis numquam. Consequuntur.</p>
+	</div>
+	<div id="quinto">
+		<img src="../../../../images/cherry.png" alt="">
+		<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Cum blanditiis recusandae obcaecati dolore possimus exercitationem voluptatem assumenda fugit aut, error, minus nulla culpa, suscipit perferendis aliquid praesentium quis aperiam perspiciatis!</p>
+	</div>
+</body>
+</html>

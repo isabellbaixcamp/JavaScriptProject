@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.negri
+	</style>
+	<script>
+		function cambio_h1() {  //Function para cambiar de color las h1 y el tamaño
+			document.getElementById("purple").style.color = "purple";
+			document.getElementById("purple2").style.color = "purple";
+			document.getElementById("purple").style.fontSize = "20px";
+		}
+
+		function cambio_p() {
+			var x = document.getElementsByTagName('p');
+			for(i = 0; x.length; i++) {
+				x[i].style.color = "lime";
+			}
+		}
+
+		function cambio_imagen() {
+			var x = document.getElementsByTagName('img');
+			for(i = 0; i < x.length; i++) {
+				x[i].src="bowie.png";
+			}
+		}
+
+		function cambio_lista() {
+			document.getElementById('onelist').style.color = "aquamarine";
+			document.getElementsByTagName('li')[0].style.color = "aquamarine";
+		}
+
+		function cambiarNaranja() {
+			var z = document.getElementsByClassName('negri');
+			for(i = 0; i < z.length; i++) {
+				z[i] = style.color = "orange";
+			} 
+		}
+
+		//querySelectorAll : devuelve un array a partir de un css
+		// document.querySelectorAll('.negri');
+		//var
+
+		function ver() {
+			alert(document.getElementsByTagName('a')[0].getAttribute('href')); // devuelve el valor del atributo
+			document.getElementsByTagName('a')[0].setAttribute('href',"http://www.yahoo.es");// es analogo a los getters y setters de objetos java
+			document.getElementsByTagName('a')[0].setAttribute('style', "color:red';fontSize");
+		}
+	</script>
+</head>
+<body><!-- cambiar el color de las h1 a purple y el tamaño de la 	fuente a 20px byelementId-->
+	<h1 id="purple">titulo</h1>
+	<h2>Subtitulos</h2>
+	<a href="http://www.google.com" onmouseover="ver();"> Google</a>
+	<p class="negri">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Qui animi voluptates, iste pariatur aliquam, quo quas cupiditate temporibus quam, laboriosam eaque ratione fugiat libero quia, quaerat tempore. Error, cumque, dolorem.</p>
+	<img src="trebol.jpg" alt="">
+	<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Iure perspiciatis reprehenderit itaque hic sint, nihil cumque exercitationem dolores dolorem optio nemo libero quidem ipsum mollitia culpa tempora aliquam esse illo?</p>
+    <img src="" alt="">
+    <ul>
+    	<li id="onelist">Item</li>
+    	<li>Item</li>
+    	<li>Item</li>
+    </ul>
+    <button  onclick="cambio_h1();">Click</button>
+
+
+    <input onclick = "cambio_imagen();"type="button" value="Colores"/>
+    <h1 id="purple1">titulo</h1>
+	<h2>Subtitulos</h2>
+    <p>Imagenes</p>
+
+	<p class="negri">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Quibusdam beatae, porro eos aspernatur ipsum animi quaerat veniam. Est cum suscipit ratione provident id, eveniet voluptas, facere nihil dolorum ipsa odit!</p>
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veniam deserunt est amet consequuntur tenetur ipsum, quia saepe labore itaque natus aspernatur numquam, sapiente, accusamus eos doloribus, fugit. Dicta, quia!</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt iusto aperiam dolor soluta nesciunt sed mollitia accusantium dicta eum repellat recusandae sit quas quod maxime voluptate pariatur rem, similique.</p>
+	<p>Lista</p>
+	
+	<!-- cambiar el color de las p a lime con tagname-->
+	<!-- cambiar las imagenes con tagname-->
+	<!-- el color de la primera li a aquamarine con tagname-->
+
+</body>
+</html>

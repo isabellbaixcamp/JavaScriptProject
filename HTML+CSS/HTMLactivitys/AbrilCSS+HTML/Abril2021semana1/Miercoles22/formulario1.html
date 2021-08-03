@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style >
+		label{ display: block; }
+	</style>
+</head>
+<body>
+	<h1> Registro </h1>
+	<form action="#" method="post"> <!-- etiqueta de llamado al formulario -->
+		<label for="nom">Nombre</label> <!-- hay correlacion entre el label for y el id que regira el input-->
+		<input type="text" id="nom" />
+		<label for="apell"> Apellido</label>
+		<input type="text" id="apell"> <!-- el id se usa como identificador en el css y html, mientras que el "name" se utiliza para el servidor-->
+		<label for="contra"> Contraseña</label>
+		<input type="password" id="contra" />
+		<label for="correo"> Mail</label>
+		<input type="email" id="correo" />
+
+		<label for="sug"> Sugerencias </label>
+		<textarea name="" id="" cols="30" rows="10">...</textarea>
+		<label for=""> Desea informacion?</label>
+
+		<input type="radio" name="info"/> Si
+		<input type="radio" name="info"/> No
+		<label for=""> Aficiones</label>
+		<input type="checkbox"/> Danza <!-- el checkbox sirve para escoger a multiples opciones a diferencia del radio que condiciona a una sola opcion -->
+		<input type="checkbox"/> Lectura
+		<input type="checkbox"/> Viajar
+
+		<!-- input para color (multiples opciones)-->
+
+		<label for="colors"> Seleccione color </label>
+		<input type="color" id="colors" name="colors" value="#ff0000">
+		<!-- input para fecha-->
+
+		<input type="date" name="fecha" step="1" min="1900-01-01" max="3000-12-31" value="3000-01-01"/>
+		<!-- input para mes-->
+
+		<input type="month" name="mes"/>
+
+		<!-- input para numero entre 0 y 10-->
+
+		<label for="cant">Numeros 1 a 10 :</label>
+		<input type="number" id="cant" name="cant" min="1" max="10">
+		
+		<!-- input para url-->
+
+		<label for="web"> adjunta tu sitio web:</label>
+		<input type="url" id="web" name="web">
+		
+
+		<input type="submit" value="Click"> <!-- el submit envia los parametros al servidor-->
+		<input type="reset" value="Borrar">
+		<input type="button"  onclick=" alert('hola');" value="Hazme click!" />
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		label, input {
+			display: block;
+		}
+	</style>
+	<script>
+		function datos() {
+			var s = true;
+			if(document.miForm.nom.value == "") {
+				s = false;
+				document.miForm.nom.style.borderColor ="red"; // verifica el atributo "nom" del elemento input
+			} else {
+				document.miForm.nom.style.borderColor = "lime";
+			} 
+
+			if(document.miForm.nom.value == "") {
+				s = false;
+				document.miForm.apel.style.borderColor ="red";
+				//verifica el atributo "apel" del elemento input
+			} else {
+				document.miForm.apel.style.borderColor = "lime";
+			} 
+
+			if(document.miForm.nom.value == "") { //verifica el atributo "dni" del elemento input
+				s = false;
+				document.miForm.dni.style.borderColor ="red";
+			} else {
+				document.miForm.dni.style.borderColor = "lime";
+			}
+
+			if(s == true) {
+				//alert("Todo rellenado!");
+				document.miForm.submit(); // "submit", es un metodo del objeto miForm.
+			} else {
+				alert("no se puede enviar");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="archivo.php" method="get" name="miForm">
+		<!-- post: privado, en la url no aparecen los datos
+			get: en fase desarrollo-->
+		<label for="">Nombre</label>
+		<input type="text" name="nom" />
+		<label for="">Apellido</label>
+		<input type="text" name="apel" />
+		<label for="">DNI</label>
+		<input type="text" name="dni" />
+		<input type="button" value="Enviar" onclick="datos();" />
+	</form>
+</body>
+</html>

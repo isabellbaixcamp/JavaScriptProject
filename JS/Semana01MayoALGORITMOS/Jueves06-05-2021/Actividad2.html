@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+		table, tr, td {
+			margin: 2px;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		/*
+		Dada una edad te aparece un mensaje con las tarifasde un gimnasio.Niño (a partir de 6 años y menos de 12 años) 15€Joven (a partir de 12 años y menos de 30 años 25€)Adulto (a partir de 30 años y menos de 65 años 30€)Jubilados(a partir de 65 años 20€)Hacer con if() simple.
+		*/
+
+		var edad;
+
+		edad = parseInt(prompt("ingrese la edad"));
+
+		if((edad <= 12) && (edad >= 6)) {
+			document.write("la edad corresponde a <br><table><tr><td>tarifa niño</td></tr><tr><td>costo  15 Euros</td></tr></table>");
+		} if((edad > 12) && (edad < 30)) {
+			document.write("la edad corresponde a <br><table><tr><td>tarifa Joven</td></tr><tr><td>costo  15 Euros</td></tr></table>"); 
+		} if((edad >= 30) && (edad < 65)) {
+			document.write("la edad corresponde a <br><table><tr><td>tarifa Adulto</td></tr><tr><td>costo  25 Euros</td></tr></table>");
+		} if(edad >= 65) {
+			document.write("la edad corresponde a <br><table><tr><td>tarifa Jubilados</td></tr><tr><td>costo 20 Euros</td></tr></table>");
+		} 
+	</script>
+</body>
+</html>

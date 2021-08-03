@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*
+        entrar un listado de contraseñas y usuarios. Buscar si está en ese listado el usuario Pedro con contraseña 12345. En la salida aparecerá si está o no ese usuario.
+		*/
+
+		var lista1, lista2, user, pass, res, c = 0;
+		lista1 = new Array();
+		lista2 = new Array();
+
+		user = prompt("ingrese el usuario");
+		lista1[0] = user;
+		pass = prompt("ingrese la contraseña");
+		lista2[0] = pass;
+		res = prompt("desea ingresar otro usuario?")? "si" : "no";
+
+		///   WHILE ///
+
+		//document.write(res);
+		while("si") {
+			user = prompt("ingrese el usuario");
+			lista1[lista1.length] = user;
+			pass = prompt("ingrese la contraseña");
+			lista2[lista2.length] = pass;
+			res = prompt("desea ingresar otro usuario?")? "si" : "no";
+
+			
+		}
+
+		
+		document.write(lista1);
+
+		
+		
+	</script>
+</body>
+</html>

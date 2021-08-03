@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+	<style>
+		table {
+			border: 3px;
+			color: white;
+		}
+
+		td#black {
+			background-color: black;
+			color: white;
+		}
+		td#red {
+			background-color: red;
+			color: white;
+		}
+	</style>
+<body>
+	<script>
+		/* 
+         Programa que mostri els números parells que hi hagi  de 10 números entrats per teclat i els senars en llistes diferents.Els parells d’un color , els senars d’un altre 
+		*/
+
+		var num;
+
+		for(i = 0; i < 10; i++) {
+			num = parseInt(prompt("ingrese numero"));
+			if(num % 2 != 0) {
+     		document.write("<table><tr><td id = 'black'> Impar : " + num + "</td></tr></table");
+     	} else {
+     		document.write("<table><tr><td id = 'red'> Par : " + num + "</td></tr></table");
+     	}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ejercicio 3</title>
+	<script>
+		function registro() {
+			
+			var nombre = document.formito.nom.value;
+			var cadena = "";
+
+			if(nombre=="") {
+				document.getElementById('datos').innerHTML="rellene el nombre";
+				document.formito.nom.style.borderBottomColor = "red"; 
+			} else {
+			if(document.formito.conocer[0].selected == true) {
+				cadena+= "nos conocistes por ... telefono";
+			} else if(document.formito.conocer[1].selected == true) {
+				cadena+= "nos conocistes por ... internet";
+			} else {
+				cadena+= "nos conocistes por ... un conocido";
+			}
+
+			document.getElementById('datos').innerHTML+=nombre + " " + cadena;
+		}
+}
+		/* controlar que el campo no este vacio
+		vacio: aparece en datos: rellene el nombre y el input aparece el borde de abajo en rojo
+		rellenado en datos aparece Pedro no conocistes por internet*/
+	</script>
+</head>
+<body>
+	<form action="#" name="formito"/>
+		<label for="" title="Nombre primera mayuscula">nombre</label> <!-- el title se puede adjuntar en cualquier etiqueta-->
+		<input type="text" name="nom" onfocus="this.value=''; this.style.borderColor = 'blue';" placeholder = 'AQUI VA NOMBRE'; />  <!-- onfocus es el evento -->
+		<label for=""> como nos conocistes?</label>
+		<select name="conocer" id="">
+			<option value="tel">telefono</option>
+			<option value="internet">internet</option>
+			<option value="conocido">un conocido</option>
+		</select>
+		<input type="button" value="Enviar" onclick="registro();"/>
+	</form>
+	<p id="datos">Datos: </p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 2</title>
+	<style> 
+       header {  /* MODIFICACION DEL DIV POR LA ETIQUETA CORRESPONDIENTE: HEADER*/
+            background-color: orange;
+       	    text-align:center;}
+       	    @media screen and (max-width: 500px){
+       		  div p,div img {width: 100%;}
+       	}
+        img {
+            width:30%;    /* REUBICACION DEL TAG STYLE DE IMG*/
+            height:150px;"
+        }
+
+        p#parraf {   /* CORRECCION DEL INLINE DE P PARA MEJOR ACCESIBILIDAD */
+            width: 50%;
+            float:right;
+        }
+
+        div.dividi  { /* CREACION DE LA CLASE DE LOS DIVS PARA EVITAR EL INLINE Y MEJORAR LA LECTURA DE LA TAG PARA MEJOR ACCESIBILIDAD */
+            width: 500px; 
+            margin:0 auto; 
+            padding:10px;"
+        }
+
+        p#parraf1 {
+            width: 50%;
+            float:left;
+        }
+
+    </style>
+</head>
+<!-- -->
+<body>
+	<header>
+      <h1>Cabecera</h1>
+  </header>
+	 
+  <h1>Título</h1>
+	<h2>Subtítulo</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sapiente dolorum beatae dolorem reiciendis praesentium officia, culpa. Blanditiis nobis optio dicta dolore, architecto consequuntur voluptatum, molestiae error doloribus reprehenderit tempora.</p>
+	
+  <div class="dividi"> 
+
+	   <img src="mostruo.png" alt=""> <!-- ANEXION DEL ATRIUTO ALT A IMG, LO DEJO VACIO PUES LA IMAGEN ES EXCLUSIVAMENTE DECORRATIVA-->
+      <p id="parraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corporis possimus esse, atque distinctio, nobis voluptatem vel ut, quisquam accusantium similique. Quia quo, consequatur laborum eligendi minus non amet. Nemo?</p>
+  </div>
+
+    <div class="dividi"> <!-- CORRECCION DEL INLINE STYLE -->
+    	<p id="parraf1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corporis possimus esse, atque distinctio, nobis voluptatem vel ut, quisquam accusantium similique. Quia quo, consequatur laborum eligendi minus non amet. Nemo?</p>
+      <img src="mostruo.png" alt=""><!-- ANEXION DEL ATRIUTO ALT A IMG-->
+    </div>
+
+
+
+	</div>
+</body>
+</html>

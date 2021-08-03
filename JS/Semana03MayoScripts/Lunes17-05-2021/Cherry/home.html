@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="cerezas.css" />
+        <script>
+            function nom() {
+                var nom;
+                nom = prompt("nombre, por favor");
+                document.getElementById("name").innerHTML = nom;
+            }
+        </script>
+			 
+</head>
+<body onload="nom();"> <!-- SE DECLARA EL EVENTO APENAS CARGUE LA PAGINA CON EL ONLOAD-->
+<div id="container">
+    <h1 onmouseover="document.getElementById('imag').src = 'cherry.png';">Prova pràctica</h1> <!-- INSERCION DEL EVENTO 'ONMOUSEOVER' DENTRO DEL H1, ADJUNTANDO LA IMAGEN-->
+	<img src="" alt="" id="imag" style="margin-left:800px;">
+    <h2>Cherry</h2>
+    <p id="TopText">Benvingut a la meva pàgina</p>
+    <p id="name"></p>
+	<p id="t"></p>
+    
+        <ul id="menu">
+        	<li><a href="#">Home</a></li>
+        	<li><a href="#">Receptes</a></li>
+        	<li><a href="#">Contacte</a></li>
+        	<li><a href="#">Registre</a></li>
+			<li><a href="#">Ofertes</a></li>
+        </ul>
+  
+   <!--  INSERCION DEL EVENTO ONMOUSEOVER DENTROS DEL H3-->
+    <h3 onmouseover="this.style.color = 'white';"> Macedonia</h3> 
+    <p>Barregem tots els ingredients un a un, barrejant-ho en tot moment a velocitat 
+	baixa si tenim un robot de cuina. <p>Si ho fem a mà anem barrejant durant una estona
+	cada vegada que incorporem un nou ingredient fins que aquest estigui ben integrat.</p>
+<p>	Engreixem un motlle de pastís amb mantega i hi evoquem la barreja.</p>
+	<p>Col·loquem el pastís al forn durant uns 45-50min (nosaltres amb 45min en tenim 
+	prou però depén de cada forn).</p>
+
+ 
+	</p> 
+	<p> 	Retirem el pastís del forn i el deixem refredar.
+      Ja ens el podem menjar o el podem cobrir amb mermelda 
+	  o xocolata!   </p>
+
+    <h3 onmouseover="this.style.color = 'white';" onclick="this.innerHTML+='q aproofiti';">Ingredients</h3>   <!--PUNTO 3  --> 
+	<p id="texto" style="font-size:20px;"></p>
+        <ul class="lista">
+
+		
+
+            <li>600gr de formatge tipus Philadelphia</li>
+            <li>3 ous</li>
+            <li>2 iogurts naturals</li>
+            <li>Llet (1 iogurt)</li>
+            <li>Crema de llet (1 iogurt)</li>
+            <li> Farina (2 iogurts)</li>
+            <li>Sucre (2 iogurts)</li>
+            <li>Llevat (1 sobre)</li>
+           
+
+
+        </ul>
+
+    <p onmouseover="this.innerHTML='Website powered by ...you';">Website powered by ...name</p>  
+
+
+<!-- 2 MANERAS DE HACER EN ONMOUSEOVER-->
+    <p onmouseover="document.getElementById('pie').innerHTML=' you';">Website powered by ... <span id="pie">name</span></p>  
+   
+      
+</div>
+
+<script>
+    //document.getElementById("name").innerHTML+= nom();
+</script>
+
+
+
+</body>
+</html>

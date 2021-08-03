@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/* Desarrollar  un programa que dé por mensaje una lista de posibles  cantantes(  Luis , Alejandro, Pablo, Alicia, Marta o Ricky), e ingresando uno de estos nombre que dé información sobre su próximo  concierto., dar formato a la salida*/
+
+		var cantante,  lista, fecha;
+        lista = ['Luis', 'Alejandro', 'Pablo', 'Alicia', 'Marta', 'Ricky'];
+
+        document.write("los cantantes son " + lista + "<br/>");
+
+        cantante = prompt("indique el cantante para conocer las fechas");
+
+        switch(cantante) {
+        	case "Luis".toLowerCase():
+        		fecha = "Junio";
+        		break;
+        	case "Alejandro".toLowerCase():
+        		fecha = "la fecha disponible es 28 de Junio";
+        		break;	
+        	case "Pablo".toLowerCase():
+        		fecha = "la fecha disponible es 12 de Enero";
+        		break;
+        	case "Alicia".toLowerCase():
+        		fecha = "la fecha disponible es 28 de Septiembre";
+        		break;
+        	case "Marta".toLowerCase():
+        		fecha = "la fecha disponible es 28 de Noviembre";
+        		break;
+        	case "Ricky".toLowerCase():
+        		fecha = "la fecha disponible es 28 de Diciembre";
+        		break;
+        		default:
+        		fecha = "sin fecha";
+        }
+        
+        alert("el cantante es " + cantante + " y las fechas son " + fecha);		
+
+        /* cantante = prompt("indique el cantante para conocer las fechas");
+
+        switch(cantante) {
+        	case Luis:
+        		fecha = "la fecha disponible es 28 de Junio";
+        		break;
+        	case Alejandro:
+        		fecha = "la fecha disponible es 28 de Junio";
+        		break;	
+        	case Pablo:
+        		fecha = "la fecha disponible es 28 de Junio";
+        		break;
+        	case Alicia
+        		fecha = "la fecha disponible es 28 de Junio";
+        		break;
+        	case Marta:
+        		fecha = "la fecha disponible es 28 de Junio";
+        		break;
+        	case Ricky:
+        		fecha = "la fecha disponible es 28 de Junio";
+        		break;
+        		default:
+        		fecha = "sin fecha";
+        }
+
+       alert("el cantante es" + cantante );*/
+		
+	</script>
+</body>
+</html>

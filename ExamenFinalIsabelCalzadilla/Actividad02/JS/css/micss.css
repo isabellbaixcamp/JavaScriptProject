@@ -1,0 +1,8 @@
+
+/*********** Estilos generales **********/
+
+#imagen{
+	height: 350px;
+	background-image: url('../img/bg-bot.jpg');
+	background-size: cover;
+}

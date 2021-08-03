@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        position: absolute;
+        top: 45%;
+        left: 40%;
+      }
+
+      /****************************  Moving box ****************************/
+      div#abriviated {
+        animation: abriviated 3s linear 0s infinite alternate;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        animation-iteration-count: infinite;
+      }
+
+      div#abriviated:active {
+        background-color: purple;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        animation-play-state: paused;
+      }
+
+      @keyframes abriviated {
+        0% {
+          background-color: orange;
+          left: 0px;
+          top: 0px;
+          box-shadow: 5px 5px 5px red;
+        }
+
+        25% {
+          background-color: lime;
+          left: 80%;
+          top: 80%;
+          box-shadow: 50px 50px 50px red;
+        }
+        50% {
+          background-color: purple;
+          left: 0%;
+          bottom: 20%;
+          border-radius: 50px;
+        }
+
+        100% {
+          background-color: green;
+          top: 0px;
+          right: 0px;
+        }
+      }
+
+       /**************************** Background ****************************/
+
+       div#alll {
+        animation-name: alll;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        background-color: purple;
+        height:1200px;
+        width:1920px ;
+       
+      }
+
+      @keyframes alll {
+        0% {
+          background-color: orange;
+          left: 0px;
+          top: 0px;
+          
+          border-radius: 5000px;
+        }
+        25% {
+          background-color: lime;
+          height: 600px;
+          width: 970px;
+          border-radius: 5px;
+          float: right;
+
+        }
+        50% {
+          background-color: purple;
+         
+          border-radius: 5000px;
+        float: left;
+        }
+        100% {
+          background-color: green;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Click the box to stop it !!!</h1>
+    <div id="alll">
+        
+    <div id="abriviated"></div>
+</div>
+  </body>
+</html>

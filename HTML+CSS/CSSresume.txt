@@ -1,0 +1,91 @@
+CSS
+
+- la diferencia entre el margin y el padding:
+
+padding: dicta el espacio interno entre una caja y los objetos contenidos en ella.
+
+marging: dicta el espacio externo entre cajas.
+
+display: inline;  /* coloca a las lista (por defecto en bloquse) seguidas una detras de las otras, de forma parecida a las "a"*/
+
+font-family:   se ha de colocar aca para que aplique al completo en el documento; 
+	color:
+	font-size;
+	line-height  ** interlineado
+
+Overflow: propiedad que permite controlar que pasa cuando el contenido se desborda.
+
+valores: 
+
+- visible. (por defecto)
+- hidden.
+- scroll.
+- auto.
+
+- Definicion de tablas:
+
+table>tr*2>td*3 funciona para hacer mas practico las tablas
+
+border-collapse: collapse; /* eliminna el doble borde de las tablas */
+
+- la propiedad de agrupacion se representa en : ","
+
+POSITION
+
+position: relative;
+			top: 10px;   /* anexando estos valores mueve los elementos DE LA CAJA relativamente de posicion */
+			left: 50px;
+
+HERENCIA
+
+contenedor es padre siempre que no tenga una position static, por ende:
+
+- cualquier position relative: se movera en relacion a su propio objeto (posicion).
+- position absolute: se movera en relacion con su contenedor padre.
+
+/* si la position es absolute permite adherir los valores left, top y demas, no se debe de usar el margin*/
+
+position: relative;  /* de esta manera se declara padre al div*/
+
+   *******FLOAT
+
+La propiedad Float deja el espacio original que ocupa libre, por lo que los otros elementos
+se desplazan a su lugar, para evitar que las box se avalancen sobre ello y respeten el orden se debe de usar
+la propiedad CLEAR.
+
+.after-box { clear: left;  } ****  EJEMPLO DE UN ELEMENTO QUE SE DESPLAZO A LA IZQUIERDA Y PARA
+			EVITAR QUE COLAPSEN SE HA DE COLOCAR EL ATRIBUTO CLEAR *****
+
+para asegurarnos se puede especificar:
+		clear: both; *** para salvaguardar todos los espacios
+
+KEYFRAME
+
+se define position relative para poder manipular los top y left en el keyframe
+
+CON LAS PROPIEDADES HEREDADAS DEL RELATIVE POSITION, se pueden manipular el desplazamiento de los frames
+
+
+*********  NAV BAR ************
+
+la definicion de las listas en la barra se define cada elemento en una caja.
+
+tanto la nav o el que contenga la lista es una caja.
+
+- ul es otra caja
+- li es otra caja
+
+el OVERFLOW es imperativo en la navbar
+
+- es NECESARIO usar el tag <ahref> dentro de la barra y no solo lista.
+
+- con el display block el elemento ocupa toda la medida declarada en el width de la li 
+
+se debe de ver en que momento codificar el hover pues al ser un lenguaje en cascada cualquier cambio le hace perder efecto
+
+- float: left; /* hace que las cajas al flotar se coloquen unas al lado de otra*/
+
+
+*********** FONTS ******************
+
+

@@ -1,0 +1,15 @@
+****************  JAVASCRIPT *************************
+
+Declaracion variable:
+
+- comienzan por letras, simbolo ($) o (_) (sin el parentesis).
+- no deben ser palabras reservadas.
+- que sea descriptiva.
+- son case sensitive.
+
+
+
+
+
+
+ 

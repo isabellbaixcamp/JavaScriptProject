@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function sumar() {
+			//ler num1
+			var sum = 0;
+			var x = parseFloat(document.formu.num1.value);
+			//leer num2
+			var y = parseFloat(document.formu.num2.value);
+			sum = x + y;
+
+			document.getElementById('opera').innerHTML+=sum;
+
+		}
+
+		function restar() {
+			var rest = 0;
+			var x = parseFloat(document.formu.num1.value);
+			//leer num2
+			var y = parseFloat(document.formu.num2.value);
+			rest = x - y;
+
+			document.getElementById('opera').innerHTML+= rest;
+		}
+
+		function multiplicar() {
+			var mul = 0;
+			var x = parseFloat(document.formu.num1.value);
+			//leer num2
+			var y = parseFloat(document.formu.num2.value);
+			mul = x * y;
+
+			document.getElementById('opera').innerHTML+= mul;
+		}
+	</script>
+</head>
+<body>
+	<h1>Operaciones</h1>
+	<form action="" name="formu"> <!-- NAME, REFIERE AL NOMBRE CON EL QUE LEEREMOS EL FORMULARIO EN LA FUNCTION -->
+		<label for=""> Numero 1</label>
+		<input type="text" name="num1">
+
+		<label for=""> Numero 2</label>
+		<input type="text" name="num2">
+
+		<label for=""> Operaciones </label>
+		<input type="radio" name="operacion" onchange="sumar();" /> Sumar
+        <input type="radio" name="operacion" onchange="restar();"/> Restar
+        <input type="radio" name="operacion" onchange="multiplicar();"/> Multiplicar
+
+	</form>
+	<p id="opera">Resultado: </p>
+</body>
+</html>

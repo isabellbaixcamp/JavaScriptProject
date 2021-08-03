@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/* estilo interno*/
+	body{ background-color: #d004f6; /*rgb, rgba*/ }
+	/* CSS por etiqueta */
+	h1{ color: red; }
+	h2{text-align: center;
+	   font-style: italic;
+	   }
+	 /*agrupamiento */
+	 h1,h2,p{ font-size: 15px; }
+
+	 /* por identificador */
+	 p#uno{font-size: 25px;} /* se le ha de colocar el identificador especifico antes de la almohadilla para ser explicito el css*/
+
+	 /* por clase */
+	 .negri{ font-weight: bold; }
+	 /* las tres ultimas p sean cursiva*/
+	 .cursi{ font-style: italic; }
+
+	 div#primer{background-color: yellow;}
+
+	 div#segon{background-color: black;}
+
+	</style>
+</head>
+<body>
+
+	<h1>Titulo</h1>
+	<h2>Subtitulos</h2>
+	<!-- id es un identificador y es unico por pagina-->
+
+	<div id="primer">
+		<p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias maxime cumque culpa laboriosam saepe officiis, recusandae ut magnam dolore sed? Harum voluptatem perspiciatis vero reiciendis vitae recusandae obcaecati modi pariatur?</p><a href="#">Link</a>
+		<h2>Subtitulo</h2>
+		<p class="negri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima necessitatibus amet exercitationem explicabo, soluta aspernatur dolorum, quos saepe iusto sint in quibusdam voluptate odit eaque, voluptatibus quasi officiis ipsum.</p><a href="#">Link</a>
+		<h2>Subtitulo</h2><a class="negri" href="#"> link </a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem delectus laudantium eos facilis tempora nesciunt quidem quos eius, eveniet magnam nostrum pariatur cum, animi explicabo possimus quasi architecto aliquam, veniam.</p><a href="#">Link</a>
+		<h2>Subtitulo</h2>
+	</div>
+
+	<div id="segon">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima necessitatibus amet exercitationem explicabo, soluta aspernatur dolorum, quos saepe iusto sint in quibusdam voluptate odit eaque, voluptatibus quasi officiis ipsum.</p><a href="#">Link</a>
+		<h2>Subtitulo</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima necessitatibus amet exercitationem explicabo, soluta aspernatur dolorum, quos saepe iusto sint in quibusdam voluptate odit eaque, voluptatibus quasi officiis ipsum.</p><a href="#">Link</a>
+		<h2>Subtitulo</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima necessitatibus amet exercitationem explicabo, soluta aspernatur dolorum, quos saepe iusto sint in quibusdam voluptate odit eaque, voluptatibus quasi officiis ipsum.</p><a href="#">Link</a>
+	</div>
+</body>
+</html>

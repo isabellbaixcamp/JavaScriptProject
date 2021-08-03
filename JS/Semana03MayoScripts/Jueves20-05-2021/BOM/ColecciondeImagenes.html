@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function changes() {
+
+			for(i = 0; i < document.images.length; i++) {
+				document.images[i].src = "bowie.png";
+			}
+			alert("la ruta de la imagen es" + document.images[1].src);
+		}
+	</script>
+</head>
+<body>
+	<h1> coleccion de imagenes BOM</h1>
+	<img src="bowie.png" alt="description"/>
+	<img src="odissey.jpg" alt="description"/>
+	<img src="bowie.png" alt="description"/>
+	<img src="odissey.jpg" alt="description"/>
+	<img src="bowie.png" alt="description"/>
+	<input type="button" value="cambiar" onclick="changes();"/>
+</body>
+</html>

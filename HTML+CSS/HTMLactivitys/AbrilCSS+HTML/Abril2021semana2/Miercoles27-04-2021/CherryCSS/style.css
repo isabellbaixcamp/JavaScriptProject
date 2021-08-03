@@ -1,0 +1,127 @@
+body {
+	background-image: url("../../../../../images/cherry1.jpg");  /* verificar la ubicacion de la imagen */
+	background-repeat: no-repeat;  /* atributo para no repetir la imagen al ocupar el espacio de fondo*/
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;  /* atributo para que la imagen cubra al completo los elementos que se contendran dentro*/
+	/*font-family:   se ha de colocar aca para que aplique al completo en el documento; 
+	color:
+	font-size;
+	line-height  ** interlineado *** */
+
+}
+
+#contenedor {
+	width: 900px;
+	height: 1300px;
+	background: rgba(255,255,255,0.7);
+	margin: 10px auto;  /*  deja el margen arriba y abajo de 10 pixeles*/
+	border-radius: 35px; /* */
+	padding: 10px;
+	box-shadow: 2px 10px 10px purple;
+}
+
+header h1 { /*especificar a cual h1 refiere, en este caso, al encabezado */
+	
+	padding-top: 60px;  /* es recomendable aplicar el margin antes del padding  */
+	text-align: center;
+	font-family: Comic Sans MS;
+	color: white;
+	text-shadow: 10px 5px 2px red;
+	padding-bottom: 50px;
+}
+
+header h2 {
+	color: white;
+	font-family: Comic Sans MS;
+	text-align: center;
+	text-shadow:0px 8px 2px green,
+				159px 1px 2px blue,
+				18px 6px 3px #1F14E4,  /* los shadows se pueden aplicar multiplicidad de veces siempre y cuando se respeten la correcta aplicacion con "," separando cada valor*/
+				-125px -34px 0px purple,
+				100px 32px 3px green,
+				1px -20px 4px #FF9797,
+				159px -50px 1px #ff3333,
+				-87px 25px 2px red;	
+				padding-bottom: 50px;
+}
+
+h4 {  /* indicar como toptext*/
+	color: purple;
+	font-family: Comic Sans MS;/* no era necesario definir este atributo, bastaba con hacerlo en el body para que aplique al completo de objetos */
+	text-align: right;
+	text-shadow: 5px 10px 1px red;
+	padding-bottom: 15px;
+	padding-right: 25px;
+
+}
+
+ul#menu{   /*  */
+  background-color: #990099;
+  text-align: center;
+  font-family: Comic Sans MS;/* no era necesario definir este atributo, bastaba con hacerlo en el body para que aplique al completo de objetos */
+  margin:0px;
+  padding:15px;
+  border-radius: 10px;
+  overflow:hidden;
+  list-style-type:none;
+  font-size:20px;
+
+}
+
+ul#menu li{
+	float:left;
+    color:white;
+	margin-left:40px;
+	margin-right:40px;
+	padding: 0px;
+
+}
+
+ul#menu li a{  
+	display: block;
+
+    font-size:30px;
+	text-decoration: none;
+  	color: white;
+  	font-size: 15px;
+  	font-weight:bold;
+  	padding: 10px;
+}       
+
+
+ul#menu li a:hover{
+  	background-color: pink;
+   	color:purple;            
+}
+
+h3 {  /* indicar especificamente con "section" a que id refiere*/
+	text-align: center;
+	font-family: Comic Sans MS;/* no era necesario definir este atributo, bastaba con hacerlo en el body para que aplique al completo de objetos */
+	color: red;
+	text-shadow: 3px 2px 2px white;
+}
+
+#center {
+	margin top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: Comic Sans MS;  /* no era necesario definir este atributo, bastaba con hacerlo en el body para que aplique al completo de objetos */
+	font-size: 15px;
+}
+
+section ul#cherry { /* indicar a que ul, "section"*/
+	list-style: circle inside url("../../../../../images/cherry2.png")
+	margin-left: 50px; /* falto la propiedad de margin para que se corriera la lista*/
+}
+
+ul#cherry li {
+	color: #ff00bf;
+}
+
+#propiedad  {  /*  no era necesario agregar un id, con especificar que se refiere a la p del footer bastaba*/
+	text-align: center;
+	font-family: Comic Sans MS;/* no era necesario definir este atributo, bastaba con hacerlo en el body para que aplique al completo de objetos */
+	color: red;
+	text-shadow: 3px 2px 2px white;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		/* 
+		evento: accion que genera la persona usuaria.
+		eventos de: raton, de teclado, de pagina..
+		onload = evento de carga
+		onmouseover = evento de raton cuando se pasa por encima.
+		onmouseout = evento de raton, se deja de estar encima del elemento.
+		*/
+	</script>
+</head>
+<body onload="alert('se ha cargado');">
+	
+	<p onclick="alert('has hecho click');"> texto............ click</p>
+	<p onmouseover = "alert('pasas por encima');" onmouseout="alert('dejas');">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Nostrum numquam placeat quasi doloremque, impedit debitis accusantium possimus voluptatum, dicta illo nam, minus iure earum ex sunt. Perferendis sed iusto, quam.</p>
+	<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Voluptas quisquam officia dolor magni accusamus dicta fugiat deleniti inventore voluptate atque, repellendus numquam pariatur impedit, vel aperiam quibusdam voluptatibus cumque cum?</p>
+	<!-- el this sustituye en document.getById, en casos donde el Id coincide -->
+	<p onmouseover="this.style.color = 'lime'">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias totam excepturi, dolor itaque velit consectetur nemo minus animi consequatur id tenetur, saepe. Quis maxime aut accusantium earum ipsum dicta, esse.</p>
+	<img src="on.png" alt="" style="width: 100px;" onmouseover="this.src = 'off,png';" onmouseover="this.src = 'off.png'; ">
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/* break*/
+
+		for(i = 1; i <=5; i++) {
+            if( i == 3) {
+            	break;
+            }
+			document.write("vamos por la i: " + i + "<br/>");
+		}
+
+		
+	</script>
+	<script>
+/* entrada de 5 nombres y dejar si es pepi o luis*/
+	var nom;
+	for(i = 0; i < 5; i++) {
+		nom = prompt("introduzca el nombre");
+		//if( nom == 'pepi' || nom == 'luis') {  CORRECTO
+		if( nom == 'pepi'.toUpperCase || nom == 'luis'.toUpperCase) {	
+			break;
+		}
+
+		if(i==6) {
+			alert("solo  5 intentos");
+		}
+		document.write(nom + "<br/>");
+	} 
+	</script>
+	<script>
+		/* break*/
+
+		for(i = 1; i <=5; i++) {
+            if( i == 3) {
+            	continue; //  el continue refiere a obviar un elemento especifico contenido en ese condicional.
+            }
+			document.write("vamos por la i: " + i + "<br/>");
+		}
+
+		
+	</script>
+</body>
+</html>

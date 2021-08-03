@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		#red {
+			background-color: red;
+		}
+
+		#blue {
+			background-color: blue;
+		}
+
+		#yellow {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<p>Hacer un programa en el que se pida el nombre de un empleado y su sueldo. Se quiere hacer un incremento del 5%. Imprimir en el doc HTML el nombre y el sueldo actual en una línea diferente. Por ejemplo:
+    'Juan:</p>
+
+    <p>1.100 € 'pista: parseFloat ()</p>
+
+    <script>
+    	var nombre,sueldo,porcentaje;
+    	nombre = prompt("indique el nombre de empleado");
+    	sueldo = parseInt(prompt("indique el sueldo del trabajador"));
+    	porcentaje = parseFloat((sueldo * 5 / 100));
+
+    	document.write("El nombre del trabajador es : <span id = 'red'>" + nombre + "</span></p><p> Sueldo: <span id = 'blue'>" + sueldo + "</span></p>" + " y el aumento seria de <span id = 'yellow'>" + (sueldo + porcentaje) + "</span></p>" );
+    </script>
+</body>
+</html>

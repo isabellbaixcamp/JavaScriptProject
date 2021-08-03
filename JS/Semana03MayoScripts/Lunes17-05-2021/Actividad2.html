@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function date() {
+			var name = prompt("nombre");
+			document.getElementById('nom').innerHTML=name;
+			var today = new Date();
+			var day = today.getDate();
+			var month = today.getMonth() + 1;
+			var year = today.getFullYear(); 
+
+			document.getElementById("fecha").innerHTML="la fecha es: " + day + "/" + month + "/" + year;
+		}
+
+		function nombre() {
+		var x = prompt("diga su nombre");  // no se le puede indicar el nombre de una variable aun atributo pues no lee el codigo
+
+		document.getElementById('nom').innerHTML = x;
+		}
+
+		
+	</script>
+</head>
+<body>
+	<!-- En pagina con minimo un parrafo y un button, mostrar en el paragrafo el dia y la hora al hacer click en el boton -->
+	
+	<h1 id="nom"> Hola </h1>
+
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos odit quasi saepe dignissimos natus impedit, nisi ipsa commodi dolor, optio aperiam enim praesentium labore, dicta facilis dolores accusantium doloremque quae?</p>
+
+	<p id="fecha"></p>
+
+	<p id="date">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Voluptate porro, a id tempore maxime distinctio debitis blanditiis expedita cumque nemo ullam quis voluptatibus vel exercitationem hic nulla error. Ex, ipsum.</p>
+
+	<input type="button" value = "day" onclick="date();" />
+	<input type="button" value="hola" onclick="nombre();" />
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+	</style>
+	<script>
+		function verificar() {
+			var cad = "";
+			if(document.form1.nom.value == "") { //SE APUNTA AL NOMBRE DEFINIDO DENTRO DE LA CAJA DEL FORMULARIO, IMPERATIVO!!!!
+				//alert(document.form1.nom.value);
+				cad+="el campo no puede estar vacio </br>"; // SE ALMACENA EL VALOR DE LA LECTURA EN UNA STRING VACIA PARA USAR EL innerHTML
+
+			} if(document.form1.cognom.value == "") {
+				cad+="el campo no puede estar vacio </br>";
+
+			}
+
+			document.getElementById('aviso').innerHTML= cad; // INCORPORAMOS EL RESULTADO DE LA CADENA EN EL ELEMENTO DESCRITO CON LA TAG Y USAMOS EL EVENTO PARA ELLO.
+		}
+
+		var cuentaup = 0;
+		function up() {
+			cuentaup++;
+			alert(cuentaup);
+		}
+	</script>
+</head>
+<body>
+	<h1>Datos registro</h1>
+	<form action="form1" onreset="alert('los datos no se almacenaran..');" onsubmit="verificar();"> <!-- EL NOMBRE "FORM1" SERVIRA COMO CAMPO A USAR EN LA FUNCION-->
+		<label for=" "> Nombre</label>
+		<input type="text" name="nom" onchange="alert('has cambiado el texto');" />
+
+		<label for=" "> Apellido</label>
+		<input type="text" name="cognom" onkeyup="up()" />  <!-- ID de los atributos que usaremos en la funcion para leer los datos-->
+		<label for="">SUGERENCIAS</label>
+		<textarea name="" id="" cols="30" rows="10" onblur="alert('gracias por sus sugerencias');"></textarea>
+
+		<label for=""> Operaciones</label>
+		<input type="radio" name="opera" onchange="alert('has escogido la suma');" />Sumar
+		<input type="radio" name="opera" checked="checked" />Restar
+
+		<input type="reset" value="delete" />
+		<input type="button" value="comprobar" onclick="verificar();">
+		<input type="submit" />
+	</form>
+	<p id="aviso"></p>
+</body>
+</html>

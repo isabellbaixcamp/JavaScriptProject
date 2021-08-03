@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Html5</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script>
+      function comprueba(){
+      	alert("hola");
+      	var opcion;
+      	var eleccion;
+      	var name = document.formus.nom.value; // nombre value
+      	
+      	alert(name);  // name
+
+      	var mail = document.formus.mail.value;
+
+      	alert(mail); //mail
+
+      	var commenta = document.formus.comment.value;
+
+      	alert(commenta); 
+
+      	if(document.formus.sel1[0].selected == true) {
+      		alert("No has seleccionado");
+      	} else if(document.formus.sel1[1].selected == true) {
+      		document.getElementById('write').innerHTML = "Tu navegador favorito es explorer";
+      	} else if(document.formus.sel1[2].selected == true) {
+      		document.getElementById('write').innerHTML = "Tu navegador  favorito es Firefox";
+      	} else if(document.formus.sel1[3].selected == true) {
+      		document.getElementById('write').innerHTML = "Tu navegador favorito es Safari";
+      	} else if(document.formus.sel1[4].selected == true) {
+      		document.getElementById('write').innerHTML = "Tu navegador favorito es Opera";
+      	} else  {
+      		document.getElementById('write').innerHTML = "Tu navegador favorito es Chrome";
+      	}
+
+      	if(document.formus.sexo[0].checked) {
+
+      	}
+
+      	alert(sex);
+
+      	
+
+       }
+  </script>     
+  
+</head>
+<body>
+<div class="container">
+<form role="form" method="" action="" name="formus">
+
+<div class="form-group">
+<label>Nombre: </label><input class="form-control" name="nom" type="text">
+<label>e-Mail:</label> <input class="form-control" name="mail" type="text">
+</div>
+<label>Comentarios:</label> <textarea rows="4" cols="30" id="comment"class="form-control"></textarea>
+
+<div class="form-group">
+<label for="sel1">Navegador preferit?</label>
+<select class="form-control" id="sel1" name="sel1">
+<option value="0">.....</option>
+<option value="1">Internet Explorer</option>
+<option value="2">Firefox</option>
+<option value="3">Safari</option>
+<option value="4">Opera</option>
+<option value="5">Google Chrome</option>
+</select>
+</div>
+<label>Sexe:</label>
+<div class="form-group">
+<input type="radio" name="sexo" checked="">Masculino
+<input type="radio" name="sexo">Femenino
+</div>
+
+<label>Aficions</label>
+<div class="form-group">
+<div class="checkbox-inline ">
+<input type="checkbox" name="n1" id="campo1"> Música<br/>
+</div>
+<div class="checkbox-inline ">
+<input type="checkbox" name="n2"id="campo2"  > Balls<br/>
+</div>
+<div class="checkbox-inline ">
+<input type="checkbox" name="n3"id="campo3"> Viatges<br/>
+</div>
+<div class="checkbox-inline ">
+<input type="checkbox" name="n4"id="campo4" > Lectura<br/>
+</div>
+<div class="checkbox-inline ">
+<input type="checkbox" name="n5" id="campo5"> Excursions<br/>
+</div>
+<div class="checkbox-inline ">
+<input type="checkbox" name="n6"id="campo6" > Altres<br/>
+</div>
+</div>
+
+<div class="form-group">
+		<div class="col-md-2">
+		<input class="btn btn-info" type="button" onclick="comprueba()"  name="enviar"	  value="Envia" 	  />
+	   </div>
+
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<p id="write"></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+   
+</body>
+</html>

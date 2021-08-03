@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*
+		Desarrollar un programa que permita cargar un nombre y 5 notas . Queremos obtener la media y la valoración (insuficiente,suficiente,bien,etc.) y si está suspendido o aprobado. Ejemplo de salida: Hola Pepi has aprobado con una media de 7,3 y tu nota final es un notable
+		 */
+
+		var nombre, notas, valor, sum = 0, media = 0;
+		
+		nombre = prompt("ingrese el nombre");
+		for(i = 0; i < 5; i++) {
+			
+			notas = parseInt(prompt("ingrese notas"));
+			sum+= notas;
+			media = sum / 5;
+			
+		}
+
+		switch(media) {
+			case (media < 5):
+				valor = "REPROBADO";
+				break;
+			case (media == 5):
+				valor = "suficiente";
+				break;
+			case (media == 6):
+				valor = "APROBADO";
+				break;
+			case (media == 7):
+				valor = "aprobado";
+				break;
+			case (media > 7):
+				valor = "NOTABLE";
+				break;
+			case (media == 10):
+				valor = "EXCELENTE";
+				break;
+				default:
+        		fecha = "sin fecha";
+
+		}
+
+		document.write("Hola " +  nombre + " has  con una media de" +  media + valor );
+	</script>
+</body>
+</html>

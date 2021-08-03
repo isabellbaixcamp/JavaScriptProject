@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		table,th {  /* definicion de las tablas*/
+			border: 3px solid purple;
+		}
+
+		table {
+			border-collapse: collapse; /* eliminna el doble borde de las tablas */
+		}
+		table {
+			width: 50%; height: 100px;
+		}
+
+		td {
+			text-align: center;
+			padding: 15px;
+			border-bottom: 2px solid blue;
+		}
+		tr:hover {
+			background-color: red;
+		}
+		/* selector: nth-child() odd,even, numero*/
+		tr:nth-child(even) {
+			background-color: green;
+		}
+
+	</style>
+</head>
+<body>
+	<table> <!--table>tr*2>td*3 funciona para hacer mas practico las tablas -->
+		<tr>
+			<td>celda</td>
+			<td>celda</td>
+			<td>celda</td>
+		</tr>
+		<tr>
+			<td>celda</td>
+			<td>celda</td>
+			<td>celda</td>
+		</tr>
+	</table>
+</body>
+</html>

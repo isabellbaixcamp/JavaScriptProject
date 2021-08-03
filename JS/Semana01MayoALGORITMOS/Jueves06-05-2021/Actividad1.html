@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#yellow {
+			background-color: yellow;
+			font-weight: 50px;
+		}
+		#red {
+			background-color: red;
+			font-weight: 50px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		/*
+		Dado un número entrado por teclado, realitzar de nuevo el script para que informa si el númerointroducidoes positivo o negativo.5
+		*/
+
+		var num;
+
+		num = parseInt(prompt("introduzca el numero a comprobar"));
+
+		if(num < 0) {
+			document.write("el numero es negativo <span id = 'yellow'>" + num + "</span>");
+		} else {
+			document.write("el numero es positivo <span id = 'red'>" + num + "</span>");
+		}
+
+	</script>
+</body>
+</html>

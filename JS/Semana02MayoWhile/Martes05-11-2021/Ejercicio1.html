@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/* 
+		programa 2 numeros, si primero es mayor se suman y diferencia, si 2 es mayor multiplicar y dividir (primero al segundo).
+		si son iguales (mensaje)
+		que pasa si es cero 
+		*/
+
+		var num1, num2, sum=0, rest=0, mul=0,div=0;
+
+		num1 = parseInt(prompt("ingrese valor 1"));
+		num2 = parseInt(prompt("ingrese valor 2"));
+
+		while(num1 != 0 || num2 != 0 || num1 == num2) {
+			if(num1 > num2) {
+				sum = num1 + num2;
+				rest = num1 - num2;
+				alert("el numero 1 es mayor, su suma es igual a " + sum + " y la diferencia entre ambos es " + rest);
+
+			} else {
+				mul = num1 * num2;
+				div = num1 / num2;
+				alert("el numero 2 es mayor, su multiplicacion es igual a " + mul + " y la division entre ambos es " + div);
+				
+			}
+		}
+
+    	//  ARREGLAR
+
+		if(num1 == num2) {
+			alert("los numeros son iguales, intente otra vez");
+		} if(num1 == 0) {
+			alert("debido a que el numero 1 es 0 las respuestas consiguientes seran siempre del valor de numero2" + num2);
+		} if(num2 == 0) {
+			alert("debido a que el numero 2 es 0 las respuestas consiguientes seran siempre del valor de numero1" + num1);
+			}
+	</script>
+	
+</body>
+</html>

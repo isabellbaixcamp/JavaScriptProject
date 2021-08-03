@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function contarNodos() {
+			var c = document.getElementById('elDiv').childNodes.length; // childNodes es el conjunto de nodos del div
+
+			document.getElementById('contenido').innerHTML = c;
+
+			alert(document.body.childNodes.length);
+			}
+
+		function cambiaColor() {
+			var x = document.getElementById('elDiv').childNodes;
+
+			for(i = 0; i < x.length; i++) {
+				x[i].style.backgroundColor = "green";
+				//x[5] = style.backgroundColor = "yellow";
+				//x[9] = style.backgroundColor = "yellow";
+
+				//x[3] = style.backgroundColor = "black";
+				//x[7] = style.backgroundColor = "black";
+				
+			}
+		}	
+
+			//alert(x.length);
+		
+
+		// cambiar de fondo de color
+		// 1,3 y 5 parrafo de un color y los otros de otros.
+	</script>
+</head>
+<body>
+	<div id="elDiv"><!--Nodo de elemento de id -->
+		<p>primer parrafo</p> <!--Nodo de elemento p, nodo de texto primer parrafo -->
+		<p>segundo parrafo</p><!--Nodo de elemento p, nodo de texto segundo parrafo -->
+		<p> Tercer parrafo</p>
+
+		<p>Cuarto parrafo</p>
+
+		<p>quinto parrafo</p>
+	</div>
+	<p id="contenido"></p>
+	<button onclick="contarNodos();"> ChildNodes </button>
+	<button onclick="cambiaColor();">ChangeColor</button>
+
+</body>
+</html>

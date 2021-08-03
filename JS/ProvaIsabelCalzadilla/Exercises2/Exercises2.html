@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		/*Es vol tenir una aplicació per obtenir les àrees d’algunes figures gràfiques .
+Partim de quatre imatges, i al fer click en una d’elles em demana les dades que necessita per calcular la seva àrea. Veure quines dades es necessita per cadascun.
+
+		*/
+
+		function rectangulo() {
+			var num1 = parseFloat(prompt("base?"));
+			var num2 = parseFloat(prompt("altura?"));
+			var area = (num1 * num2);
+			var images = document.getElementsByTagName('p');
+			for(i = 0; i < images.length; i++) {
+				images[0].innerHTML = "L'area del rectangulo introduit es";
+				images[1].innerHTML = area;
+				
+			}
+			
+		}
+
+		function rombo() {
+			var num1 = parseFloat(prompt("diagonal menor?"));
+			var num2 = parseFloat(prompt("diagonal mayor?"));
+			var area = (num1 * num2) / 2;
+			var images = document.getElementsByTagName('p');
+			for(i = 0; i < images.length; i++) {
+				images[0].innerHTML = "L'area del rombo introduit es";
+				images[1].innerHTML = area;
+				
+			}
+			
+		}
+
+		function cuadrado() {
+			var num1 = parseFloat(prompt("lado 1?"));
+			var num2 = parseFloat(prompt("lado 2?"));
+			var area = num1 * num2;
+			var images = document.getElementsByTagName('p');
+			for(i = 0; i < images.length; i++) {
+				images[0].innerHTML = "L'area del cuadrado introduit es";
+				images[1].innerHTML = area;
+				
+			}
+			
+		}
+
+		function triangulo() {
+			var num1 = parseFloat(prompt("base?"));
+			var num2 = parseFloat(prompt("altura?"));
+			var area = (num1 * num2) / 2;
+			var images = document.getElementsByTagName('p');
+			for(i = 0; i < images.length; i++) {
+				images[0].innerHTML = "L'area del triangulo introduit es";
+				images[1].innerHTML = area;
+				
+			}
+			
+		}
+
+	</script>
+
+	<style>
+
+		h1 {
+			margin-left: 185px;
+			font-size: 70px;
+		}
+
+		p {
+			font-size: 35px;
+			margin-left: 185px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>FIGURAS</h1>
+
+	<img src="img/rectangulo.jpg" onmousedown="rectangulo();"alt="figura" width="200px"/>
+	<img src="img/rombo.png" onmousedown="rombo();" alt="figura" width="200px"  />
+	<img src="img/cuadrado.png" onmousedown="cuadrado();" alt="figura"  width="200px"/>
+	<img src="img/triangulo.png" onmousedown="triangulo();" alt="figura"  width="200px"/>
+
+	<p></p>
+	<p></p>
+</body>
+</html>

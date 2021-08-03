@@ -1,0 +1,184 @@
+body {
+	background-image: url("../../images/filo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+	font-family: letter;
+	font-weight: 15px;
+}
+
+/* LLAMADO DE APLICAR EL FONT-FACE CUSTOM DEL TIPO DE LETRA*/
+@font-face {
+	font-family: letter;
+	src: url("/fonts/Inconsolata/Inconsolata-Black.ttf");
+}
+
+div#container {
+	background-color: pearl;
+	width: 1000px;
+	height: 3000px;
+	background: rgba(255,255,255,0.7);
+	border-radius: 35px;
+	position: relative;
+	top: 10px;
+	left: 300px;
+	right: 300px;
+	bottom: 10px;
+
+}
+
+/* EL FOOTER NO PERMITE LA MISMA REACCION ANTE EL AGRUPAMIENTO QUE P, PORQUE?*/
+h1,p.cabecera {
+	text-align: center;
+	font-size: 50px;
+	font-family: Calibri;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #8b939a;
+	text-shadow: 45px 40px 4px #8b939a;
+}
+
+nav#menu ul {
+	width: 850px;     /* La barra menu se ajusta considerando que cada elemento esta contenido en caja */
+	height: 60px;
+	margin:50px;
+	padding: 0px;
+	background-color: #8b939a;
+
+
+}
+
+ul {
+	list-style-type: none;
+	border-radius: 15px;
+	margin-left: 50px;
+	padding: 0px 0px 0px 48px;
+	/*line-height: normal; */
+	color: white;
+	font-size: 30px;
+	overflow: hidden;
+
+	
+
+}
+
+li {
+	float: left;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	display: block;
+	margin-left: 60px;    /* se definen los valores para ubicar el texto de forma simetrica a la caja
+	donde esta contenido y no se conglomeren todos*/
+	padding: 20px;
+
+}
+
+li a:hover {
+	background-color:  #2d3436;
+}
+
+.slider {
+	clear: both;  /* la definicion de el deslizamiento solo se debe de ejecutar al valor del width */
+	width: 700px;     /* definicion del slider y las 3 imagenes a deslizar como propiedades*/
+	height: 400px;
+	margin-top: 50px;
+	margin-left: 135px;
+	margin-right: 135px;
+	margin-bottom: 50px;
+	box-shadow: 5px 5px 5px #8b939a,
+				-5px -5px 5px black;
+
+	background-image: url("../../images/tarkovsky.jpg"),
+					  url("../../images/third_man.jpg"),
+					  url("../../images/odissey.jpg");
+
+	background-repeat: no-repeat;
+
+	animation-name: movies;  /* nombre de la animacion*/
+	animation-duration: 8s; /* definicion del time*/
+	animation-direction: left;/* direccion de las imagenes*/
+	animation-iteration-count: infinite;/* duracion del slider por conteo de imagen*/
+}
+
+.slider p {display: none;}
+
+@keyframes movies{
+	0%{  /* se posicionan en el plano cartesiano*/
+		background-position: 0px 0px,/*  definicion de la primera posicion en la coordenada 0*/
+							-700px 0px,
+							-1400 0px;
+	}
+	100%{
+		background-position: 700px 0px,/*  definicion de la segunda posicion en la coordenada 500*/
+							 0px 0px,
+							-700 0px;
+	}
+	100%{
+		background-position: 1400px 0px,/*  definicion de la tercera posicion en la coordenada 0*/
+							 700px 0px,
+							  0px 0px;
+	}
+}
+
+h2 {
+	color: #8b939a;
+	text-align: center;
+	font-size: 40px;
+}
+
+p {
+
+	margin: 20px;
+	padding: 10px;
+	font-size: 20px;
+
+}
+
+p#movies {
+	text-align: center;
+}
+
+table#tabla {
+	border-collapse: collapse;
+	border: 3px solid black;
+	position: absolute;
+	line-height: 1.8;
+	width: 100%;  /* LA ORDEN INDICA LA TOTAL UBICACION SEGUN EL RECIPIENTE */
+	
+}
+
+
+td {
+	color: black;
+	text-align: center;
+}
+
+table#contacto {
+	border-collapse: collapse;
+	position: absolute;
+	line-height: 1.6;
+	left: 100px;
+	width: 50%;
+	bottom: 160px;
+	
+}
+
+td {
+	text-align: left;
+}
+
+
+
+
+
+footer {   /* CON LA POSITION ABSOLUTE OBLIGO AL FOOTER A UBICARSE EN REFERENCIA AL BODY Y POR ELLO SE COLOCA BOTTON
+	MIENTRAS QUE CON EL RELATIVE SE UBICARIA HACIA LOS ELEMENTOS INTERNOS*/
+	position: absolute;
+	bottom: 10px;
+	left: 140px;
+}

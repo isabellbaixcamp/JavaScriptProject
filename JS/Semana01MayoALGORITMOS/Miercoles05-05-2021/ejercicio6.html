@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/* 
+Realizar el script para hacer el cálculo de la nota final a partir de los aciertos y de los fallos, es decir se pide la entrada de los dos datos y se hace el siguiente cálculo: ( (numaciertos-(numfallos/3))*10)/20. El resultado se presenta mediante un mensaje de alerta (alert).
+		*/
+
+		var aciertos, fallos, final;
+
+		aciertos = parseFloat(prompt("ingrese la cantidad de aciertos"));
+		fallos = parseFloat(prompt("ingrese la cantidad de fallos"));
+		final = ((aciertos-(fallos / 3)) * 10) / 20;
+
+		alert("la nota final es igual a " + final);
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		/*3. Realizar un programa que te pida el nombre, el sueldo y la categoría, a partir de estos datos obtenemos en un div en concreto sus datos y su sueldo final.  Teniendo en cuenta que hay tres categorías A, B y C, con un 5%, 7% y 10% de aumento.*/
+
+		function empleado() {
+			var cad = "";
+			var worker = prompt("desea ingresar un empleado, responda con (si/no)?");
+			if(worker == 'si'.toLowerCase()) {
+					var name = prompt("nombre");
+					var sueldo = parseFloat(prompt("sueldo"));
+					var category = prompt("categoria").toLowerCase();
+					switch (category) {
+						case 'a':
+							document.getElementById('respuesta').innerHTML = " el nombre es " + name + " el sueldo es  " + (sueldo + (sueldo * 5 / 100)) + " y la categoria es : " + category;
+							break;
+						case 'b':
+							document.getElementById('respuesta').innerHTML = " el nombre es " + name + " el sueldo es  " + (sueldo + (sueldo * 7 / 100)) + " y la categoria es : " + category;
+							break;
+						case 'c':
+							document.getElementById('respuesta').innerHTML = " el nombre es " + name + " el sueldo es  " + (sueldo + (sueldo * 10 / 100)) + " y la categoria es : " + category;
+							break;
+							default:
+							document.getElementById('respuesta').innerHTML = "categoria invalida";
+							break;
+					}
+					
+			} else {
+				document.getElementById('respuesta').innerHTML = " No ha ingresado trabajador";
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Sueldo empleados</h1>
+	<p>Ingrese los datos del empleado:</p>
+	<button onclick="empleado()">click</button>
+	<div id="respuesta">
+		
+	</div>
+</body>
+</html>

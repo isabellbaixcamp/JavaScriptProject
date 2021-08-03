@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!--programa que demande numeros y los sume, dejara de hacerlo cuando entren el numero 0 -->
+	<script>
+		var num, suma = 0;
+
+		num = parseInt(prompt("ingrese el numero"));
+
+		while(num != 0) {
+			suma += num;
+			num = parseInt(prompt("ingrese el numero"));
+		}
+        alert("los numeros ingresados suman: " + suma);
+	</script>
+</body>
+</html>

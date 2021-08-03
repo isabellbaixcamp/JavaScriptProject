@@ -1,0 +1,54 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Accedir a enllaços </title> 
+<style type="text/css">
+#cuadre  { width: 400px; height: 200px; border: 1px black solid; 
+          float: right; font-family: arial; }
+p  { font-size: 1em; font-family: arial;  }
+
+</style>
+<script>
+	function clicker() {
+		var a = document.getElementsByTagName('a');
+		for(i = 0; i < a.length; i++) {
+			document.getElementById('cuadre').innerHTML += a[i].href; // 
+		}
+	}
+
+	function text() {
+		var cadena = "";
+		for(i = 0; i < 4; i++) {
+			cadena += document.getElementsByTagName('a')[i].innerHTML + "</br>";
+		}
+
+		document.getElementById('cuadre').innerHTML = cadena;
+	}
+
+	function changes() {
+		document.getElementsByTagName('a')[3].innerHTML='YouTube';
+	}
+
+</script>
+<script type="text/javascript">
+//Exemple de pàgina en la que s'accedeix als enllaços
+
+
+</script>
+</head>
+<body>
+<h1>Accedir als enllaços</h1>
+<div id="cuadre"></div>
+<h2>Enllaços....</h2>
+<p><a href="http://www.google.com">Google</a></p>
+<p><a href="http://www.yahoo.es">Yahoo</a></p>
+<p><a href="http://es.msn.com/">MSN</a></p>
+<p><a href="http://es.altavista.com/">Altavista</a></p>
+<p onclick="clicker();">Clic per veure adreces URL</p>
+<p onclick="text();">Clic per veure text de l'enllaç</p>
+<p onclick="changes();">Clic per canviar quart enllaç a YouTube</p>
+</body>
+</html>
+

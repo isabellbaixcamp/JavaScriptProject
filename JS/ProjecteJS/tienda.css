@@ -1,0 +1,81 @@
+body {
+	background-image: url("img/lincoln.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: fixed;
+
+}
+
+
+div#container {
+	background-color: pearl;
+	width: 1400px;
+	height: 1500px;
+	background: rgba(255,255,255,0.7);
+	border-radius: 35px;
+	position: relative;
+	top: 10px;
+	left: 50px;
+	right: 50px;
+	bottom: 10px;
+
+}
+
+nav#menu ul {
+	width: 850px;     /* La barra menu se ajusta considerando que cada elemento esta contenido en caja */
+	height: 60px;
+	margin-left: 315px;
+	padding: 0px;
+	background-color: #8b939a;
+
+
+}
+
+ul {
+	list-style-type: none;
+	border-radius: 15px;
+	margin-left: 50px;
+	padding: 0px 0px 0px 48px;
+	/*line-height: normal; */
+	color: white;
+	font-size: 30px;
+	overflow: hidden;
+
+	
+
+}
+
+li {
+	float: left;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	display: block;
+	margin-left: 60px;     
+	padding: 20px;
+
+}
+
+li a:hover {
+	background-color:  #2d3436;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+}
+
+img {
+	border-radius: 5px;
+	padding: 13px;
+}
+
+p, p#init {
+	font-size: 25px;
+	line-height: 1.5;
+	margin: 20px;
+	text-align: center;
+}

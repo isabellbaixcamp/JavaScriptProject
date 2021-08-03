@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta charset="utf-8" />
+<title>Neatness</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script>
+	function saludo() {
+		var nom = prompt("nombre");
+		document.getElementsById('pie').innerHTML= nom;
+	}
+</script>
+</head>
+<body>  <!-- -	Quan la página es carrega dóna la benvinguda amb un missatge.-->
+<div id="container">
+	<header>
+		<div id="logo">
+			<h1 onmouseover="this.style.color = 'purple';">Neatness</h1>	
+			<!--	Al passar per sobre de la capçalera “neatness” aquesta canvia de color a purple.	-->	
+		</div>
+	
+	</header>
+
+	<nav><!--Al fer click als enllaços m’apareix un missatge d’alerta amb el text:”ho sentim estem en construcció..”-->
+		<ul>
+			<li><a href="#" onclick="alert('Lo sentimos, estamos en controstruccion');">Home</a></li>
+			<li><a href="#" onclick="alert('Lo sentimos, estamos en controstruccion');">Blog</a></li>
+			<li><a href="#" onclick="alert('Lo sentimos, estamos en controstruccion');">Photos</a></li>
+			<li><a href="#" onclick="alert('Lo sentimos, estamos en controstruccion');">About</a></li>
+			<li><a href="#" onclick="alert('Lo sentimos, estamos en controstruccion');">Links</a></li>
+			<li><a href="#" onclick="alert('Lo sentimos, estamos en controstruccion');">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<section>
+		<article>	<!--Al fer click a la capçalera welcome to neatness et demana el nom i el text canvia per Welcome el nom. -->
+			<h2 class="title" onclick="saludo();">Welcome  <span id="pie"> to Neatness </span></h2>
+									
+				<p>Sed lacus. Donec lectus. Nullam 
+				pretium nibh ut turpis. Nam bibendum. 
+				In nulla tortor, elementum ipsum. Proin
+				imperdiet est. Phasellus dapibus semper 
+				urna. Pellentesque ornare, orci in felis.
+				Donec ut ante. In id eros. Suspendisse 
+                lacus turpis, cursus egestas at sem.</p>
+			
+		</article>
+		<article>
+			<h2 class="title">Turpis  pellentesque </h2>
+   <!-- Al passar per la imatge de la flor a l’esquerre aquesta canvia per l’altre imatge facilitada a la carpeta imatges.-->         
+         
+		    	<p><img src="images/img06.jpg" width="143" height="143" 
+				alt="" class="alignleft border" onmouseover="this.src = 'images/img05.jpg';" />Sed lacus. 
+				Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. 
+				In nulla tortor, elementum vel, tempor at, varius non, 
+				purus.Mauris vitae nisl nec metus placerat consectetuer. 
+				Donec ipsum. Proin imperdiet est.Phasellus dapibus 
+				semper urna. Pellentesque ornare, consectetuer nisl
+				felis ac diam.</p>
+				
+		</article>
+
+	
+
+	</section>
+				
+
+	<footer>
+		<p>Mi Plantilla...</p>
+	</footer>
+		
+</div>
+	
+</body>
+</html>

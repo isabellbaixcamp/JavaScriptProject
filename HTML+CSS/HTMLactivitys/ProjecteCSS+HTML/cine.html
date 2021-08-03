@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		<div id="container">
+			<header> <!-- HEADER: definicion del titulo principal de la pagina y menu-->
+				<h1 class="cabecera">Filosofia y Cine</h1>
+
+				<nav id="menu"> <!-- Menu-->
+					<ul >
+						<li><a href="#c1">Home</a></li>
+						<li><a href="#c2">Peliculas</a></li>
+						<li><a href="#c3">Autores</a></li>
+						<li><a href="#c4">Contacto</a></li>
+						
+					</ul>
+				</nav>
+			</header>
+
+			<div class="slider"> <!-- SLIDER CON IMAGENES RELATIVAS -->
+			<!--<img src="../../images/tarkovsky.jpg">-->
+			<p>
+				SLIDER
+			</p>
+			</div>
+
+
+			<section>  <!-- SECCION PRINsCIPAL SOBRE LA PAGINA Y PRESENTACION-->
+				<h2 id="#c1"> Filosofia y cine: una simbiosis</h2>
+				<p>La relación entre la filosofía y el cine se ha visto reforzada por los ejemplos que el 7º arte da de las teorías filosóficas. Con el paso de los años los profesores han entendido lo útil del cine en sus clases. Es por ello que cada vez encontramos más literatura sobre el tema.</p>
+
+				<p>A primera vista, parece lógico pensar que cine y filosofía son dos cuestiones incompatibles. Solemos asociar la idea de ir al cine con divertirnos, pasarlo bien, comer palomitas, beber un refresco de cola, amigos, etc. En cambio, si hablamos de filosofía, solemos asociarlo a aburrirnos, rollo de colegio, profesor insoportable, etc. Y la verdad es muy distinta.</p>
+
+				<p>Pero, para ello, debemos plantearnos qué es la filosofía. Si nos vamos a la Wikipedia, encontramos la siguiente definición de filosofía: «La filosofía (del latín philosophĭa, y este del griego antiguo φιλοσοφία, «amor por la sabiduría») es el estudio de una variedad de problemas fundamentales acerca de cuestiones como la existencia, el conocimiento, la verdad, la moral, la belleza, la mente y el lenguaje. Al abordar estos problemas, la filosofía se distingue del misticismo, el esoterismo, la mitología y la religión por su énfasis en los argumentos racionales sobre los argumentos de autoridad y de la ciencia porque, generalmente, realiza sus investigaciones de una manera no empírica, sea mediante el análisis conceptual, los experimentos mentales, la especulación u otros métodos a priori, aunque sin desconocer la importancia de los datos empíricos. La filosofía occidental ha tenido una profunda influencia y se ha visto profundamente influida por la ciencia, la religión y la política occidentales. Muchos filósofos importantes fueron a la vez grandes científicos, teólogos o políticos, y algunas nociones fundamentales de estas disciplinas todavía son objeto de estudio filosófico. Esta superposición entre disciplinas se debe a que la filosofía es una disciplina muy amplia» . </p>
+
+				<p>Y si nos vamos al Diccionario de la 		Real Academia de la Legua, nos encontramos con seis definiciones: «Conjunto de saberes que busca establecer, de manera racional, los principios 	más generales que organizan y orientan el conocimiento de la realidad, así como el sentido del obrar humano; Doctrina filosófica; Conjunto de doctrinas que con el nombre de filosofía se aprenden en los institutos, colegios y seminarios; Facultad dedicada en las universidades a la ampliación de los 		conocimientos de filosofía; Fortaleza o serenidad de ánimo para soportar las vicisitudes de la vida; Manera de pensar o 	de ver las cosas».</p>
+
+				<p>Sinceramente; solo con leer las definiciones, ya me he aburrido. Aún más, diría yo; solo con intentar entender lo que quieren decir, solo con intentar saber a qué se refieren, ya me he perdido. Y si me pierdo y me aburro, simplemente, intentando entender qué es lo que debe ser la filosofía, ¿cómo puedo conocerla?</p>
+			
+
+			<div>
+			<h2 id="c2">Peliculas</h2>
+
+			<p> El listado de peliculas disponibles en la web </p>
+
+			<!-- INTRODUCCION DE 1 LABEL PARA MOSTRAR POR INDICE LAS PELICULAS-->
+			<p id="movies"><label for="peliculas">Peliculas por orden alfabetico:</label>			<select name="peliculas" id="peliculas">
+				<option value="alice">Alice in Wonderland</option>
+				<option value="mistake">A little Mistake</option>
+				<option value="bolulevar">A sunset boulevard</option>
+				<option value="akira">Akira</option>
+				<option value="casablanca">Casablanca</option>
+				<option value="cassavettes">Dark Times</option>
+				<option value="rash">Rashomon</option>
+				<option value="mistake">Ran</option>
+				
+				</select></p>
+				<!-- la p del id engloba al completo el select para centrarlo-->
+
+				
+			</div>
+
+
+			<h2 id="c3"> Autores </h2>
+
+			<p> La diversidad de autores que se han dado a la tarea de introducir temas en principio de indole filosofica en sus peliculas es bastante amplia, es por ello que los autores que estamos englobando se podrian subdivir de distintas formas y es por ello que puedes aplicar la busqueda por filtros para facilitar la misma. </p>
+
+			<div>
+			<table id="tabla">
+				<tr>
+					<td> Por nacionalidad</td>              
+					<td> Por epoca </td>
+                   	<td>Por interes</td>
+                   	<td> Por genero </td>
+				</tr>
+				<tr>
+					<td><label for="author">Rusos</label>
+						<select name="author" id="author">
+						<option value="alice">Andrei Tarkovsky</option>
+						<option value="mistake">Alexander Mushkakov</option>
+						<option value="bolulevar">Alexander Sokurov</option>	
+						</select>
+					</td>
+					<td><label for="peliculas">Cine mudo</label>			
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option>
+					<td> 
+						<label for="peliculas">Religion</label>			
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option></td>
+					<td>
+					<label for="peliculas">Western</label>			
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="peliculas">Americanos</label>			
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option>
+					</td>
+					<td>
+						<label for="peliculas">Impresionismo Aleman</label>	
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option>
+					</td>
+					<td>
+						<label for="peliculas">Politico</label>			
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option>
+					</td>
+					<td>
+					<label for="peliculas">Thriller</label>			
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="peliculas">Latinos</label>			
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option>
+					</td>
+					<td>
+					<label for="peliculas">Clasico</label>			
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option>
+					</td>
+					<td>
+					<label for="peliculas">Existencial</label>			
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option>
+					</td>
+					<td>
+					<label for="peliculas">Terror</label>			
+						<select name="peliculas" id="peliculas">
+						<option value="alice">-</option>
+						<option value="mistake">-</option>
+					</td>
+				</tr> 
+			</table>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+
+			<h2 id="c4">Contacto</h2>
+
+			<div>
+			<table id="contacto">
+			<tr>
+			<td colspan="5"><h4>Suscripcion Electronica</h4></td>
+			</tr>	
+			<tr>	
+			<td colspan="5"> Si desea estar al dia de la actualizacion del contenido, le invitamos a suscribirse mediante el siguiente formulario.
+			</td>
+			</tr>	
+			<tr>
+				<td>
+					<label for="name"> Nombre:</label> <!-- insercion de labels text-->
+				    <input type="text" id="name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="cognom"> Apellidos:</label>
+				    <input type="text" id="cognom">
+				</td>
+			</tr>
+			<tr>
+				<td> 
+					<label for="email"> e-mail:</label>
+				    <input type="text" id="cognom">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="Intereses"> Interesado en los siguientes temas:</label>
+				</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox"/> Filosofia<!-- insercion del checkbox-->
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox"/> Religion
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox"/> Cine
+					</td>
+				</tr>
+				<tr>
+				<td> 
+					<label for="opinion"> Su opinion es importante: </label>
+				</td>
+				</tr>
+				<tr>
+					<td>
+						<textarea name="" id="" cols="100" rows="10">Haganos saber su opinion</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="Enviar formulario"><!-- insercion del submit para comprobar datos en el servidor-->
+					</td>
+		
+				</tr>
+	
+			</table>
+			</div>
+
+
+			 <!-- CIERRE DE LA SECTION CENTRAL E INICIO DEL FOOTER-->
+			</section>
+
+
+			<footer>
+					<p class="cabecera"> Creado por Isabel Calzadilla</p>
+				</footer>
+		</div>
+	</body>
+</html>

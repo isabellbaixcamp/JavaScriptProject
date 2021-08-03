@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		ul#primera{
+			list-style-type: hiragana-iroha; /* hiragana, none*/
+			list-style-position: inside;  /* atributo que coloca la lista fuera o dentro de los bordes que se le indiquen */
+			
+		}
+
+		ul#primera li{
+			border: 1px solid red;
+		}
+		ol {
+			list-style-type: upper-roman;
+		}
+		ul#segunda {
+			list-style-image: url("../../../images/cherry.png"); /* propiedad para adjuntar un icono en la lista*/
+		}
+
+		ul#tercera {
+			list-style: circle inside url("../../../images/cherry.png") /* forma abreviada */
+		}
+
+		ul#cuarta {
+			border: 1px solid green;
+		}
+
+		ul#cuarta li {
+			display: inline;  /* coloca a las lista (por defecto en bloque) seguidas una detras de las otras, de forma parecida a las "a"*/
+			border: 1px solid blue;
+		}
+		ol li#escondo {
+			display: none;
+		}
+
+		div{
+			width: 100px; background-color: red; border: 2px solid blue; height: 50px; display: inline-block;
+		}
+
+		/*a {
+			border: 1px; solid blue; display: block;
+		}*/
+
+		ul#menu{border: 1px solid green; list-style-type: none;}
+		ul#menu li{border: 1px solid red; float: left;}
+		ul#menu li{border: 1px solid blue; text-decoration: none;}
+		ul#menu li a:link{color: red; text-decoration: none;} /* estado no visitado*/
+		ul#menu li a:visited{color: blue;text-decoration: none;}		/* estado visitado*/
+		ul#menu li a:hover{background-color: orange;} /* estado raton pasa por encima*/
+		ul#menu li a:active{color: purple;text-decoration: none;}
+
+	</style>
+</head>
+<body>
+	<ul id="menu">
+		<li><a href="https://www.youtube.com"> youtube</a></li>
+		<li><a href="https://sede.sepe.gob.es/especialidadesformativas/RXBuscadorEFRED/DetalleEspecialidadFormativa.do?codEspecialidad=IFCD0210"> sepe</li>
+		<li><a href="https://www.udemy.com"> udemy</li>
+	</ul>
+	<div>k</div>
+	<div>k</div>
+	<a href="">link</a>
+	<ul id="primera">
+		<li><a href="https://www.youtube.com"> youtube</a></li>
+		<li><a href="https://sede.sepe.gob.es/especialidadesformativas/RXBuscadorEFRED/DetalleEspecialidadFormativa.do?codEspecialidad=IFCD0210"> sepe</li>
+		<li><a href="https://www.udemy.com"> udemy</li>
+	</ul>
+	<ol>
+		<li>items </li>
+		<li id="escondo">items </li>
+		<li> items</li>
+	</ol>
+	<ul id="segunda">
+		<li> items</li>
+		<li> items</li>
+		<li> items</li>
+	</ul>
+	<ul id="tercera">
+		<li> items</li>
+		<li> items</li>
+		<li> items</li>
+	</ul>
+	<ul id="cuarta">
+		<li> items</li>
+		<li> items</li>
+		<li> items</li>
+	</ul>
+
+	
+</body>
+</html>

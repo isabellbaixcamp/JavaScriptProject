@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		li#purple {
+			background-color: purple;
+			color: yellow;
+		}
+		li#red {
+			background-color: red;
+			color: yellow;
+		}
+		li#green {
+			background-color: green;
+			color: yellow;
+		}
+
+
+	</style>
+</head>
+<body>
+	<script>
+/* preguntar cuantas notas desea y hacer un for*/
+
+var notas, n, aprove = 0, reprove = 0, media = 0;
+
+n = parseInt(prompt("indique la cantidad"));
+
+for(i = 0; i < n; i++) {
+	notas = parseInt(prompt("ingrese notas"));
+	media+=notas;
+
+	document.write("<ul><li id='purple'>las notas son: " + notas + "</li></ul>");
+
+	if(notas < 5) {
+		alert("REPROBADO");
+		reprove++;
+	} else {
+		aprove++;
+	}
+
+	media /= n;
+
+	document.write("<ul><li id='red'>la media es " + media + "</li></ul><ul><li id='red'> los reprobados son " + reprove + "</ul></li><ul><li id='green'>aprobados " + aprove + "</li></ul>");
+
+	
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+********** TEORIA *************
+
+- BOM (MODELO DE OBJETOS BROWSER)
+
+Se basan en la jerarquia, responden con arrays de objetos.
+
+- el inner se usa para adherir texto a algun elemento.

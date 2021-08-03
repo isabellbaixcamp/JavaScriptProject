@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		p#black {
+			font-size: 35px;
+			background-color: black;
+			color: white;
+		}
+		p#brown {
+			font-size: 35px;
+			background-color: brown;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<script>
+		/* 
+		Escriure  un programa que llegeixi 10 notes d’alumnes  i ens informi de quants tenen una nota major o igual a 7 i quants  tenen una nota menor a 7.
+		*/
+
+		var notas, mayor = 0, menor = 0;
+
+		for(i = 0; i < 10; i++) {
+			notas = parseInt(prompt( "indique la nota del alumno"));
+				if(notas >= 7) {
+					mayor++;
+				} else {
+					menor++;
+			}
+		}
+
+		document.write("<p id = 'black'>los alumnos con nota mayor a 7 son " + mayor + "</p><br><p id= 'brown'> y los que estan por debajo son :" + menor + "</p>");
+		
+	</script>
+</body>
+</html>

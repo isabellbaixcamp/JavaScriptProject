@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function luck() {
+			//let x = document.getElementById('luck').innerHTML;
+			let x = parseInt(prompt("pruebe su suerte, diga un numero?"));
+			let y = Math.floor(Math.random() * 10) + 1; 
+			if(x == y) {
+				//alert("Mala Suerte, el numero ha sido : " + x + " y el trebol era " + y); NO ERA CON ALERT
+				document.getElementById('cabecera').innerHTML='FELICIDADES ';
+				document.getElementById('uno').innerHTML='numero' + x;
+				document.getElementById('dos').innerHTML='numero premiado' + y;
+
+			} else {
+				document.getElementById('cabecera').innerHTML=': ('; 
+				document.getElementById('uno').innerHTML='numero' + x;
+				document.getElementById('dos').innerHTML='numero premiado' + y;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1 id="cabecera">Pruebe Suerte</h1>
+	<p id="uno"></p>
+	<p id="dos"></p> 
+	<!--<button onclick="luck();">Prove it</button>  ESTO NO ES COMPATIBLE, ERROR -->
+	<img src="trebol.jpg" alt = "" width="300px" onclick="luck();" /> <!-- ADJUNTO EL ONCLICK EN LA IMAGEN-->
+	
+</body>
+</html>

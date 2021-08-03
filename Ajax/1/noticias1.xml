@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<noticias>
+  <noticia>
+    <titulo>Noticia 1</titulo>
+    <cuerpo>este es el cuerpo de la noticia1</cuerpo>
+    <fecha> ...</fecha>
+  </noticia>
+  <noticia>
+    <titulo>Noticia 2</titulo>
+    <cuerpo>este es el cuerpo de la noticia2</cuerpo>
+    <fecha> ...</fecha>
+  </noticia>
+</noticias>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		// pedir nombre y se adjunte a la lista
+		function agrega() {
+			var name = prompt("nombre"); // variable  nombre
+			var add = document.createElement('li'); // variable con el tag li
+			var addText = document.createTextNode(name);// nodo que adjunta el valor de la variable name
+			add.appendChild(addText); // agrega el texto dentro de la lista
+
+			var element = document.getElementById('list');
+			element.appendChild(add);
+
+		}
+
+		function verifica() {
+			var name = prompt("nombre");
+
+			if(name == 'maria'.toLowerCase() || name == 'luisa'.toLowerCase() || name == 'fernanda'.toLowerCase()) {
+					var add = document.createElement('li');
+					var addText = document.createTextNode(name);
+					add.appendChild(addText);
+					var element = document.getElementById('list');
+					element.appendChild(add);
+			} else {
+				document.getElementById('noestuboda').innerHTML = "no es tu boda";
+			}
+		}
+
+	// añadir si son usuarios en concreto (maria, luisa, fernanda). 
+	</script>
+</head>
+<body>
+	<h1>Lista de Invitados</h1>
+	<ul id="list">
+		<li>Pepi</li>
+		<li>Mario</li>
+		<li>Luis</li>
+		<li>Pedro</li>
+	</ul>
+	
+	<button onclick="agrega();">Agrega</button>
+
+	<button onclick="verifica();">vERI</button>
+
+	<p id="noestuboda"></p>
+</body>
+</html>

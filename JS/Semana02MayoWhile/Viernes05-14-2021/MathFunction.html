@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var numLuck = Math.floor(Math.random() * 10) +1;
+	// generar un numero aleatorio entre 1 y 10, pedir un numero y mirar si acierta en tres ocasiones;
+
+	var num1, res, cont = 0;
+
+	res = prompt("desea probar su suerte, si, no?");
+	if(res == "si".toLowerCase()) {
+		while(cont < 3) {num1 = parseInt(prompt("num?"));
+		cont++;
+			if(num1 == Math.floor(Math.random() * 10) + 1) {
+			alert("SUERTUDO");
+			break;
+		} else {
+			alert("BAD LUCK");
+		}
+
+	}
+	} else {
+		alert("ADEU...");
+	}
+
+	</script>
+	
+</body>
+</html>

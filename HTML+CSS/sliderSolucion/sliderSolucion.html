@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+/********slider**********************************/
+
+#slider{	box-shadow:3px 2px 4px red,
+	               -4px -5px 3px purple;
+			clear:both;
+			margin:5px auto;
+			width: 150px;
+			height: 150px;
+			background-image: url('img/miniatura1.jpg'), 
+								url('img/miniatura2.jpg'), 
+								url('img/miniatura3.jpg'),
+								url('img/miniatura4.jpg');
+			background-position: 0px 0px, 
+								-150px 0px, 
+								-300px 0px,
+								-450px 0px;
+			background-repeat: no-repeat, no-repeat, no-repeat;
+			animation-name: backgrounds;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+}
+
+@keyframes backgrounds{
+	0%{
+		background-position: 0px 0px, 
+						-150px 0px, 
+						-300px 0px,
+						-450px 0px;;
+	}
+	50%{
+		background-position: 150px 0px, 
+						0px 0px, 
+						-150px 0px,
+						-300px 0px;
+	}
+	75%{
+		background-position: 300px 0px, 
+						150px 0px, 
+						0px 0px,
+						-150px 0px;
+	}
+	100%{
+		background-position: 450px 0px, 
+						300px 0px, 
+						150px 0px,
+						0px 0px;}
+}
+	</style>
+</head>
+<body>
+		<div id="slider" style="border-radius:10px;">	</div>
+
+</body>
+</html>

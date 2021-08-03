@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Activ1</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/micss.css">
+	<script>
+
+////  REVISAR//////////		
+		function saludo(x) {
+		
+		var aux = x;
+
+		if(x == '') {
+			alert("ingrese un nombre por favor");
+		} else {
+			document.getElementById('saludo').innerHTML = aux;
+			}
+		}
+
+
+		function cambia_Letra() {
+				document.getElementById('changes').style.color = "#cc00cc";
+		}
+
+		function cambia_h3() {
+			document.getElementById('h1').style.color ="#00cc00";
+			document.getElementById('h2').style.color ="#00cc00";
+			document.getElementById('h3').style.color ="#00cc00";
+		}		
+				
+
+		function cambiaImagen() {
+			document.getElementById('image1').src = "img/anim2.jpg";
+			document.getElementById('image2').src = "img/anim2.jpg";
+			document.getElementById('image3').src = "img/anim2.jpg";
+		}
+
+
+
+
+	</script>
+</head>
+<body>
+	<script>
+		var nom;
+		nom = prompt("nombre, por favor?");
+		saludo(nom);
+	</script>
+	<header class="bg-danger">
+		<div class="container">
+		
+			<div class="hidden-xs text-right">
+				<form action="" class="form-inline" style="margin-top:10px;">
+					<div class="form-group" >
+						<label for="user" class="sr-only">
+							usuario:
+						</label>
+						<input type="text" class="form-control" id="user" placeholder="usuario">
+					</div>
+					<div class="form-group">
+						<label for="pass" class="sr-only">
+							contraseña:
+						</label>
+						<input type="password" class="form-control" placeholder="contraseña">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Recordar
+						</label>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-default btn-sm"> Enviar </button>
+					</div>
+				</form>
+			</div>
+			<div>
+				<!-- ELEMENTO A CAMBIAR --><h1 id="saludo"> Bootstrap </h1>
+				<h4> <i>curso de creación de páginas Web</i></h4>
+			</div>
+			
+		</div>
+	</header>
+	<div id="imagen" class="container-fluid"></div>
+	<section class="bg-danger">
+		<div class="container text-center">
+		
+		<h2 id="changes" onclick="cambia_Letra();">Bienvenid@ la actividad.</h2>
+		<p>Espero que no te tengas demasiados problemas para montar esta página Web desde cero con bootstrap...</p>
+		
+		</div>
+	</section>
+	<main class="container">
+		<section class="row">
+			<article class="col-sm-4">
+				<h3 class="text-primary text-center" id="h1" onmouseover="cambia_h3();"> Formateamos texto </h3>
+				<p class="text-justify"><del>Erase una vez</del> <ins>Lorem ipsum</ins> ins dolor sit amet, consectetur adipisicing elit, sed do <mark>eiusmod tempor incididunt</mark> ut labore et dolore magna aliqua. <strong>Ut enim ad minim</strong> veniam, <span class="text-success">quis nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea commodo
+				</p>
+			</article>
+			<article class="col-sm-4 text-center">
+				<h3 class="text-primary text-center" id="h2" onmouseover="cambia_h3();"> Prueba los iconos <span class="glyphicon glyphicon-pushpin"></span>	 </h3>
+				<p><span class="glyphicon glyphicon-print"></span> Una impresora!</p>
+				<p><span class="glyphicon glyphicon-phone-alt text-danger"></span> Un teléfono rojo! </p>
+				<p><span class="glyphicon glyphicon-camera"></span> Una cámara de fotos </p>
+				<p><span class="glyphicon glyphicon-leaf text-success"></span> Una hoja verde </p>
+				<p><span class="glyphicon glyphicon-cloud text-primary"></span> Una nuve? </p>
+			</article>
+			<article class="col-sm-4">
+				<h3 class="text-primary text-center" id="h3" onmouseover="cambia_h3();"> Vamos a por una tabla? </h3>
+				<table class="table table-hover">
+					<tr class="active">
+						<th>Ciudad</th>
+						<th>Máxima</th>
+						<th>Mínima</th>
+					</tr>
+					<tr>
+						<td>Barcelona</td>
+						<td>26ºC</td>
+						<td>17ºC</td>			
+					</tr>
+					<tr>
+						<td>Sabadell</td>
+						<td class="success">25ºC</td>
+						<td class="danger">13ºC</td>			
+					</tr>
+					<tr>
+						<td>Girona</td>
+						<td>23ºC</td>
+						<td>13ºC</td>			
+					</tr>
+					<tr>
+						<td>Lleida</td>
+						<td>23ºC</td>
+						<td>12ºC</td>			
+					</tr>
+					<tr>
+						<td>Reus</td>
+						<td>26ºC</td>
+						<td>14ºC</td>			
+					</tr>
+					<tr>
+						<td>Tarragona</td>
+						<td>27ºC</td>
+						<td>16ºC</td>			
+					</tr>
+				</table>
+			</article>
+		</section>
+		<section class="row">
+			<article class="col-sm-9">
+				<h1> <span class="glyphicon glyphicon-picture"></span> Y para terminar... Imágenes!</h1>
+				<i class="lead">Bootstrap no tiene demasiadas clases para modificar imágenes... </i>
+				
+				<div class="row">
+					<div class="col-xs-4" >
+						<img src="img/anim1.jpg" id="image1" class="img-responsive img-circle" onmouseover="cambiaImagen();">
+					</div>
+					<div class="col-xs-4" >
+						<img src="img/anim1.jpg" id="image2" class="img-responsive img-circle" onmouseover="cambiaImagen();">
+					</div>
+					<div class="col-xs-4" >
+						<img src="img/anim1.jpg" id="image3" class="img-responsive img-circle" onmouseover="cambiaImagen();">
+					</div>
+				</div>
+				
+				<!-- FORMULARIO HORIZONTAL -->
+				<section>
+					<h2>Formulario Horizontal</h2>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="nombre" class="col-sm-2 control-label">Nombre:</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="nombre">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="apelido" class="col-sm-2 control-label">Apellidos:</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="apellido">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="fechan" class="col-sm-2 control-label">Fecha Nacimiento:</label>
+							<div class="col-sm-7">
+								<input type="date" class="form-control" id="fechan">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="pobl" class="col-sm-2 control-label">Población:</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="pobl">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="provincia" class="col-sm-2 control-label">Provincia:</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="provincia">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="cp" class="col-sm-2 control-label">CP:</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="cp">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="telefono" class="col-sm-2 control-label">Teléfono:</label>
+							<div class="col-sm-7">
+								<div class="input-group ">
+									<div class="input-group-addon">
+										<span class="glyphicon glyphicon-phone-alt"></span>
+									</div>
+									<input type="tel" class="form-control" id="telefono">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="a" class="col-sm-2 control-label">Sexo:</label>
+							<div class="col-sm-7">
+								<div class="radio-inline">
+									<label for="radio1">
+										<input type="radio" id="radio1" name="sexo"> Chico <span class=""></span>
+									</label>
+								</div>
+								<div class="radio-inline">
+									<label for="radio2">
+										<input type="radio" id="radio2" name="sexo"> Chica
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="descr" class="col-sm-2 control-label"> Descripción:	</label>
+							<div class="col-sm-7">
+								<textarea class="form-control" name="" id="descr" placeholder="Introduce un texto descriptivo..."></textarea>
+							</div>	
+						</div>
+						<div class="form-group">
+							<label for="opciones" class="col-sm-2 control-label"> Que tecnología prefieres?	</label>
+							<div class="col-sm-7">
+								<select name="" id="opciones" class="form-control">
+									<option value="HTML">HTML</option>
+									<option value="CSS">CSS</option>
+									<option value="Plantillas">Bootstrap</option>
+									<option value="Javascript">Javascript</option>
+									<option value="PHP">PHP</option>
+									<option value="MySQL">MySQL</option>
+								</select>
+								<p class="help-block">Elige una mia!!</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="preferencias" class="col-sm-2 control-label"> Elige tus preferencias</label>
+							<div class="col-sm-7">
+								<div class="col-sm-4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="ch">
+											<span class="glyphicon glyphicon-headphones"></span>
+											Escuchar música		
+										</label>
+									</div>
+								</div>
+								<div class="col-sm-4">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> 
+										<span class="glyphicon glyphicon-plane"></span>
+										Viajar	
+									</label>
+								</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											<span class="glyphicon glyphicon-tower"></span>
+											Juegos de mesa		
+										</label>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											<span class="glyphicon glyphicon-glass"></span>
+											Leer	
+										</label>
+									</div>	
+								</div>	
+								<div class="col-sm-4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											<span class="glyphicon glyphicon-camera"></span>
+											fotografia		
+										</label>
+									</div>	
+								</div>		
+								<div class="col-sm-4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											<span class="glyphicon glyphicon-send"></span>
+											Origami	
+										</label>
+									</div>	
+								</div>					
+							</div>
+						</div>
+						<div class="col-sm-2 col-sm-offset-2">
+							<button class="btn btn-primary">Enviar</button>
+						</div>
+					</form>
+					</section>
+					<!-- END FORM -->
+			</article>
+			<aside class="hidden-xs col-sm-3">
+				<h3>Que te ha parecido la actividad?</h3>
+			
+				<button class="btn btn-success btn-block"> 
+					<span class="glyphicon glyphicon-thumbs-up"></span> Genial!
+				</button>
+				<button class="btn btn-warning btn-block">
+					<span class="glyphicon glyphicon-hand-right"> Normal..
+				<button class="btn btn-danger btn-block"> 
+					<span class="glyphicon glyphicon-thumbs-down"></span> Bueno..  
+				</button>
+				
+				<h3>Aprobarás el examen?</h3>
+				
+				<button class="btn btn-success btn-block"> 
+					<span class="glyphicon glyphicon-ok"></span> Si
+				</button>
+				<button class="btn btn-danger btn-block">
+					<span class="glyphicon glyphicon-remove"> No
+				</button>
+				
+				<h3>Que nota sacarás?</h3>
+				<form action="">
+					<div class="form-group">
+						<label for="nota" class="sr-only">Nota: </label>
+						<input type="number" class="form-control" placeholder="Nota">
+					</div>
+					<button class="btn btn-primary btn-block">Enviar</button>
+				</form>
+			</aside>
+		</section>
+		
+	</main>
+
+	<div class="bg-info">
+		<div class="visible-xs container">
+			<h3 class="text-center">Loggin</h3>
+			<form action="" >
+				<div class="form-group">
+					<label for="user" class="sr-only">
+						Usuario:
+					</label>
+					<input type="text" class="form-control" id="user" placeholder="usuario">
+				</div>
+				<div class="form-group">
+					<label for="pass" class="sr-only">
+						Contraseña:
+					</label>
+					<input type="password" class="form-control" placeholder="contraseña">
+				</div>
+				<div class="checkbox text-right">
+					<label>
+						<input type="checkbox"> Recordar
+					</label>
+				</div>
+				<div class="form-group text-right">
+					<button type="submit" class="btn btn-default"> Enviar </button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer class="bg-primary"style="margin-top:20px;"> 
+		<div class="container">
+			<h4 class="text-right"><span class="glyphicon glyphicon-education"></span> Powered by .... - Copyright 2015</h4>
+		</div> 
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

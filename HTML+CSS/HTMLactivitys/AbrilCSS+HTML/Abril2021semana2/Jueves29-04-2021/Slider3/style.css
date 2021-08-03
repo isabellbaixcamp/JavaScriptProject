@@ -1,0 +1,62 @@
+div#desliza {
+	clear: both;  /* la definicion de el deslizamiento solo se debe de ejecutar al valor del width */
+	width: 500px;     /* definicion del slider y las 3 imagenes a deslizar como propiedades*/
+	height: 250px;
+	background-image: url("../../../../../images/green.png"),
+					  url("../../../../../images/blue.png"),
+					  url("../../../../../images/red.png");
+
+	background-repeat: no-repeat;
+
+	animation-name: colors;  /* nombre de la animacion*/
+	animation-duration: 8s; /* definicion del time*/
+	animation-direction: alternate;/* direccion de las imagenes*/
+	animation-iteration-count: infinite;/* duracion del slider por conteo de imagen*/
+}
+
+#desliza p {display: none;}
+
+@keyframes colors{
+	0%{  /* se posicionan en el plano cartesiano*/
+		background-position: 0px 0px,/*  definicion de la primera posicion en la coordenada 0*/
+							-500px 0px,
+							-1000 0px;
+	}
+	50%{
+		background-position: 500px 0px,/*  definicion de la segunda posicion en la coordenada 500*/
+							 0px 0px,
+							-500 0px;
+	}
+	100%{
+		background-position: 1000px 0px,/*  definicion de la tercera posicion en la coordenada 0*/
+							 500px 0px,
+							  0px 0px;
+	}
+}
+
+div#dos {
+	clear: both;
+	width: 500px;
+	height: 400px;
+	background-image: url("../../../../../images/green.png"),
+					  url("../../../../../images/fire.jpg"),
+					  url("../../../../../images/blue.png"),
+					  url("../../../../../images/bolt.jpg"),
+					  url("../../../../../images/watter.jpg"),
+					  url("../../../../../images/cherry1.jpg");
+
+	background-repeat: no-repeat;
+
+	animation-name: changes;
+	animation-duration:9s;
+	animation-direction: alternate;
+	animation-duration-count: infinite;
+}
+
+@keyframes changes {
+	from {
+		background-image: url("../../../../../images/green.png");
+	} to {
+		background-image: url("../../../../../images/cherry1.jpg");
+	}
+}

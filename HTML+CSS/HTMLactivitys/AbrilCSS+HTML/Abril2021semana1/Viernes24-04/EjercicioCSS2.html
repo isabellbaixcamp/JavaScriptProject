@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/*selector universal "*"  */
+		*{margin: 0px;
+		 /* border: 1px solid green;*/}
+
+		 /* selectores descendientes*/
+
+		 p span { color: blue; }
+		 p a span em {font-size: 25px;}  /* define unicamente las etiquetas enmarcadas en el parrafo con em pero se adjuntan las demas ya que se debe de aplicar la jerarquia, em, esta contenido dentro de span, dentro de a, dentro de p*/
+		 p#tres span{ color: red; }
+
+		 p#tres, p#uno { font-weight: bold;  }
+
+		 p#aviso{ color: blue; }
+
+		 /* p #aviso     refiere al id avido contenido dentro de un parrafo, la diferencia lo marca el ESPACIO*/ 
+	</style>
+</head>
+<body>
+	<h1>Titulo</h1>
+	<h2>Subtitulo</h2>
+	<p id="aviso">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Nulla in necessitatibus repellat et doloremque eius id adipisci pariatur assumenda. Temporibus voluptas magni, ipsum, expedita ut deleniti inventore nostrum adipisci id?</p>
+	<p id="uno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illum delectus, neque, dignissimos rem atque a quae accusantium ullam quas praesentium, consequuntur perferendis voluptates accusamus earum ipsum quia, quod explicabo.</p>
+	<p id="dos">Aspernatur praesentium delectus modi soluta cumque ipsa ex excepturi, amet reiciendis natus <a href=""> link <span>itaque <em> ducimus</em>  animi consequatur maiores </span></a> laborum laudantium dicta deserunt eum eveniet, debitis illum repellat voluptatibus eaque molestiae. Temporibus.</p>
+	<h1>Titulo</h1>
+	<h2>Subtitulo</h2>
+	<p id="tres">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illum delectus, neque, dignissimos rem atque a quae accusantium ullam quas praesentium, consequuntur perferendis voluptates accusamus earum ipsum quia, quod explicabo.</p>
+	<p id="cuatro">Aspernatur praesentium delectus modi soluta cumque ipsa ex excepturi, amet reiciendis natus itaque ducimus animi consequatur maiores laborum laudantium dicta deserunt eum eveniet, debitis illum repellat voluptatibus eaque molestiae. Temporibus.</p>
+</body>
+</html>

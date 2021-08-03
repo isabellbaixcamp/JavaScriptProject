@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/*div#container {
+
+		}*/
+		/*li{border: 1px solid red;}
+		a {border: 2px solid green;}*/
+		ul {
+			border: 1px solid blue;
+			width: 200px;
+			margin: 0px;
+			padding: 0px;
+			background-color: #f1f1f1;
+			list-style-type: none;
+		}
+
+		li a {
+			text-decoration: none;
+			display: block; /*con el display block el elemento ocupa toda la medida declarada en el width */
+			color: #000;
+			padding: 8px 0px 8px 16px;  /* cada elemento definido del padding se representa en coordenadas que siguen el sentido de las agujas del reloj*/
+		}
+
+
+		li a:hover {   /* se debe de ver en que momento codificar el hover pues al ser un lenguaje en cascada cualquier cambio le hace perder efecto*/
+			background-color: yellow;
+		}
+
+		li a.activadi {
+			background-color: green;
+		}
+
+		ul {border: 1px solid black;}
+		li {
+			border: 1px solid black; 
+			text-align: left;
+		}
+		/* last-child*/
+	</style>
+</head>
+<body>
+	<!--<div id="container"> -->
+		<ul>
+			<li><a class="activadi" href="#"> Inicio</a></li>
+			<li><a href="#">Noticias</a></li>
+			<li><a href="#">Contacto</a></li>
+			<li><a href="#">Sobre Nosotros</a></li>
+		</ul>
+	<!--</div> -->
+</body>
+</html>

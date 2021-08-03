@@ -1,0 +1,76 @@
+body {	background-color: white;
+		background-image: url("../../images/flor.jpg");
+		background-repeat: no-repeat;  /* atributo para no repetir la imagen al ocupar el espacio de fondo*/
+		background-attachment: scroll;
+		background-position: center center;
+		background-size: cover; /* atributo para cubir a fondo la cubierta*/
+
+		}
+
+h2#article1{
+	text-align: right;
+	text-shadow: -10px -13px 2px green;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	text-shadow: -10px -13px 2px green; 
+	margin: 30px;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	color: green;
+	position: relative;
+}
+
+section p{
+	margin-left: 25px;
+	margin-right: 25px;
+	line-height: 30px;
+	text-align: justify;
+}
+
+#container {
+	width: 600px;
+	background: rgba(255,255,255,0.7);
+	margin: 10px auto;  /*  deja el margen arriba y abajo de 10 pixeles*/
+	border-radius: 25px;
+	padding: 20px;
+	box-shadow: 2px 10px 10px purple;
+}
+
+
+nav #menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+#menu ul li {
+  float: left;   /* define la posicion  del menu especificando unicamente a aplicar en la lista contenida con el identificador*/
+}
+
+li a {
+  display: block;
+  color: white;
+  background-color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; 
+}
+
+li a:hover:not(.active) {   /* es la propiedad de resaltar al pasar el scroll */
+ background-color: yellow;
+}
+
+li a.active {
+  color: white;
+  background-color: green;
+}      
+

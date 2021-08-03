@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/* suma pares introducidos y dejar de introducir cuando es 0, contador de pares*/
+		var sum = 0, num, cont = 0;
+
+		do {
+           num = parseInt(prompt("introduzca numero"));
+           if(num % 2 == 0 && num != 0) {
+           	    cont++;  // hay prelacion con el 
+           	    sum += num;
+
+            } 
+		
+		} while( num != 0);
+		alert("la suma de los numeros es " + sum + " y la cantidad de pares es " + cont);
+	</script>
+	<script>
+		/*mientras se juega (condicional no) se piden tres numeros y se multiplican y el producto de los tres */
+		var prod,  jugar;
+		do { 
+			prod = 1;
+			jugar = prompt("desea jugar?");
+			for(i = 0; i < 3; i++) {
+				num = parseInt(prompt("introduzca el valor"));
+				//num *= num;
+				prod *= num;
+			}
+			alert("la multiplicacion de los elementos es igual a " + prod);
+
+		} while(jugar != 'no');
+		
+
+	</script>
+</body>
+</html>

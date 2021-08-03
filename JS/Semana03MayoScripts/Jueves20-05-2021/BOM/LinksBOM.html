@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function cambioYahoo() {
+		for(i = 0; i < document.links.length; i++) {
+			document.links[i].innerHTML= "YAHOO"; // cambiar el texto
+			document.links[i].href = "http://www.yahoo.es";
+		}
+
+		alert("hola" + document.links[0].href);
+	}
+	</script>
+</head>
+<body>
+	<h1>coleccion de links BOM</h1>
+	<a href="http://www.google.es">GOOGLE</a>
+	<a href="http://www.google.es">GOOGLE</a>
+	<a href="http://www.google.es">GOOGLE</a>
+	<a href="http://www.google.es">GOOGLE</a>
+	<a href="http://www.google.es">GOOGLE</a>
+	<input type="button" value="cambioLinks" onclick="cambioYahoo();">
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function suerte(){ 
+			var numPremiado=Math.floor(Math.random()*10)+1 ;
+			var numSuerte=parseInt(prompt("número ??"));
+			if(numSuerte==numPremiado){ 
+				document.getElementById('cabecera').innerHTML='FELICIDADES!!!';
+				document.getElementById('uno').innerHTML='Su número ha sido..'+numSuerte;
+				document.getElementById('dos').innerHTML='El número premiado es...'+numPremiado;
+
+			 }
+				else { 
+				document.getElementById('cabecera').innerHTML=':(';
+				document.getElementById('uno').innerHTML='Su número ha sido..'+numSuerte;
+				document.getElementById('dos').innerHTML='El número premiado es...'+numPremiado;
+
+				}
+		 }
+	</script>
+</head>
+<body>
+	<h1 id="cabecera">Prueba suerte!!!</h1>
+	<p id="uno"></p>
+	<p id="dos"></p>
+
+	<img src="t.jpg" alt="" width="100px" onclick="suerte();">
+</body>
+</html>

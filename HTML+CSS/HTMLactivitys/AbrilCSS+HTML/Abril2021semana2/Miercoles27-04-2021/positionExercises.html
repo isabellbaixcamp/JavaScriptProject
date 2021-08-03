@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div#primero {
+			border: 3px solid green;
+			position: absolute;
+			top: 300px;  /* si la position es absolute permite adherir los valores left, top y demas, no se debe de usar el margin*/
+			left: 360px;
+			padding: 60px;
+		}
+
+		div#segundo  {
+			border: 3px solid grey;
+			position: absolute;
+			top: 600px;
+			left: 500px;
+			padding: 60px;
+
+		}
+
+		div#primero,div#segundo img { /* agrupacion*/
+			position: center;
+		}
+
+		/* , div#segundo*/
+	</style>
+</head>
+<body>
+	<div id="primero">
+		<img src="../../../../images/cherry.png" alt="">
+	</div>
+	<div id="segundo">
+		<img src="../../../../images/cherry.png" alt="">
+	</div>
+</body>
+</html>

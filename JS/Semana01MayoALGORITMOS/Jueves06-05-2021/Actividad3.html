@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		ul, li {
+			background-color: yellow;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		/* 
+		Dado un número que aparezca el valor absoluto de éste ( es decir el valor positivo)
+		*/
+
+		var num;
+		num = parseInt(prompt("indique el numero"));
+
+		if(num < 0) {
+			document.write("<ul><li> El valor absoluto es " + (num * (-1)) + "</li></ul>");
+		} else {
+			document.write("<ul><li> El valor absoluto es" + num + "</li></ul>");
+		}
+
+	</script>
+</body>
+</html>

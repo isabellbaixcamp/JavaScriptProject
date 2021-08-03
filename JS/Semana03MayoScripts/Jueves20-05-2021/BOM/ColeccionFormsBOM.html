@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function formulario() {
+			var x = document.forms[0];
+			var txt = "";
+
+			alert(x.length);
+
+			for(i = 0; i < x.length; i++) {
+				txt += x.elements[i].value + "</br>";  // toma los elementos del array x, valor "value" y los almacena la variable txt. 
+			}
+			document.getElementById('contenido').innerHTML = txt;
+		}
+	</script>
+</head>
+<body>
+	<h1>Coleccion de forms del BOM</h1>
+	<form action="">
+		<label for=""> NOMBRE </label>
+		<input type="text" value="object1"/>
+		<label for=""> NOMBRE </label>
+        <input type="text" value="object2"/>
+
+        <input type="submit" value="object5" />
+       
+	</form>
+
+	<form action="">
+		<label for=""> USER </label>
+		<input type="text" value="object3"/>
+		<label for=""> PASS </label>
+        <input type="text" value="object4"/>
+
+        <input type="submit" />
+        
+	</form>
+
+	
+	<button onclick="formulario();">CLick me</button>
+
+	<p id="contenido"> </p>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ejercicio de selectores</title>
+<style>
+	/*
+Poner el siguiente estilo:;
+-cabeceras h1 subralladas.
+-h2 cursivas.
+-primer div: fondo rojo , letra de color blanco, tamaño de fuente:15px.
+-segundo div: fondo azul , letra de color blanco, tamaño de fuente:19px.
+-tercer div: fondo verde , letra de color blanco, tamaño de fuente:20px.
+-cambiar los tags <b> y <em> por el css correspondiente.
+-los links: en negrita y tamaño 15px;
+
+	*/
+
+body {
+	background-image: url("../../images/flor.jpg");
+}
+div .subrayada {  /* directamente a las h1 */
+	text-decoration: underline;  
+}
+
+div .cursiva {
+	font-style: italic;
+}
+
+div#red  {
+	background-color: red;
+	color: white;
+	font-size: 15px;
+
+}
+
+div#blue {
+	background-color: blue;
+	color: white;
+	font-size: 19px;
+}
+
+div#green {
+	background-color: green;
+	color: white;
+	font-size: 20px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+a {   /* a{font-weight: bold; font-size: 15px*/
+	font-weight: bold;
+	font-size: 15px;
+	/*color: black;*/
+}
+
+
+</style>
+</head>
+ 
+<body>
+ 
+<div id="red">
+	<h1 class="subrayada">Titulo</h1>
+	<h2>subtitulo</h2>
+	<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing elit</a>. Praesent blandit nibh <span class="cursiva">lorem  ipsum</span>at felis. Sed nec diam in dolor vestibulum aliquet. Duis ullamcorper, nisi non facilisis molestie, <span class="cursiva">lorem sem aliquam nulla</span>, id lacinia velit mi vestibulum enim.</p>
+ 
+</div>
+ 
+<div id="blue">
+	<h1 class="subrayada">Titulo</h1>
+	<h2 class="cursiva">subtitulo</h2>
+		
+	<p>Phasellus eu velit sed lorem sodales egestas. Ut feugiat. <a href="#">Donec porttitor</a>, magna eu varius luctus, metus massa tristique massa, in imperdiet est velit vel magna. Phasellus erat. Duis risus. <a href="#">Maecenas dictum</a>, nibh vitae <span class="bold">lorem  ipsum</span>pellentesque auctor, tellus velit consectetuer tellus, tempor pretium felis tellus at metus.</p>
+	 
+	<p>Cum sociis natoque <span class="cursiva">penatibus et magnis</span> dis parturient montes, nascetur ridiculus mus. <span class="bold">lorem  ipsum</span>Proin aliquam convallis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc aliquet. Sed eu metus. Duis justo.</p>
+	 
+	<p>Donec facilisis blandit velit. Vestibulum nisi. Proin volutpat, <span class="cursiva">enim id iaculis congue</span>, orci <span class="bold">lorem  ipsum</span>justo ultrices tortor, <a href="#">quis lacinia eros libero in eros</a>. Sed malesuada dui vel quam. Integer at eros.</p>
+</div>
+<div id="green">
+	<h1 class="subrayada">Titulo</h1>
+	<h2 class="cursiva">subtitulo</h2>
+
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, illo quis amet eius laudantium nemo quibusdam officiis culpa, fugiat architecto repudiandae, enim molestiae esse veritatis quidem. Obcaecati ea suscipit non.</p>
+	<p>Mollitia officia, corporis et consequuntur assumenda. Numquam cupiditate, unde distinctio corrupti odio dignissimos similique culpa deserunt iure et a voluptatum vero exercitationem sequi fugiat possimus odit esse, maxime fugit, expedita!</p>
+	<p>Eos, a minus nostrum velit atque praesentium quidem. Accusamus aspernatur maiores doloremque quisquam repudiandae aliquam impedit, suscipit dicta. Iste autem voluptatum aliquam quia molestias accusantium nulla id similique suscipit! Assumenda.</p>
+</div>
+ 
+</body>
+</html>

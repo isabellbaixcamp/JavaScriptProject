@@ -1,0 +1,40 @@
+<menu_almuerzo>
+    <comida><!-- nodos[0]-->
+        <nombre>Waffles</nombre>
+        <precio moneda="euros">2.00</precio>
+        <descripcion>Waffles baratos de McDonalds</descripcion>
+        <calorias>650</calorias>
+    </comida>
+    <comida><!-- nodos[1].-->
+        <nombre>Hamburguesa</nombre>
+        <precio>5.00</precio>
+        <descripcion>La hamburguesa  de McDonalds</descripcion>
+        <calorias>1500</calorias>
+    </comida> 
+    <comida>
+        <nombre>Hamburguesa completa</nombre>
+        <precio>5.00</precio>
+        <descripcion>La hamburguesa  de McDonalds</descripcion>
+        <calorias>1500</calorias>
+    </comida> 
+     <comida>
+        <nombre>Ensalada</nombre>
+        <precio>3.50</precio>
+        <descripcion>La ensalada de McDonalds</descripcion>
+        <calorias>100</calorias>
+    </comida>  
+     <comida><!-- nodos[4].childNodes[5].childNodes[0].nodeValue-->
+        <nombre>Ensalada tropical</nombre>
+        <precio moneda="euros">4.50</precio>
+        <descripcion> 
+            La ensalada de McDonalds
+        </descripcion>
+        <calorias>100</calorias>
+    </comida> 
+     <comida>
+        <nombre>Sandy</nombre>
+        <precio>2.00</precio>
+        <descripcion>El postre de McDonalds</descripcion>
+        <calorias>200</calorias>
+    </comida>     
+</menu_almuerzo> 

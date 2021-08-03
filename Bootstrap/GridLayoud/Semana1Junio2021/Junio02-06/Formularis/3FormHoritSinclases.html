@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container"> 
+<form action="#"role="form" method="post" enctype="multi/form-data" class="form-horizontal"><!--CLASE PARA UBICAR HORIZONTAL EL INPUT-->
+
+    <div class="form-group">
+		<label for="" class="control-label col-md-2">Nom</label>  
+			<div class="col-md-10">
+				<input	class="form-control" type="text"	  id="nom"	  placeholder="nom" /> 
+			</div>
+	</div>
+
+  
+	<div class="form-group">
+		<label for="" class="control-label col-md-2">Correu</label>	
+			<div class="col-md-10">
+				<input	class="form-control" type="text" id="correo"	placeholder="correo" />
+			</div>
+	</div>		
+	 
+  		
+	
+    <div class="form-group">
+		<label for="" class="control-label col-md-2">Contrasenya</label>	
+		 	<div class="col-md-10">
+				<input class="form-control" 	 type="password" id="password"	placeholder="password" />
+			</div>
+    </div>    
+ 		
+	
+     
+	
+			<div class="form-group">
+				<div  class="checkbox col-md-2 col-md-offset-2"><!-- PARA AGRUPAR MULTIPLES CLASES SE HA DE HACER DE ESTA MANERA EN BOOTSTRAP, DE FORMA SEGUIDA Y SIN SEPARACION SIMBOLICA-->
+					<label for="recordar" class="text-primary">
+						<input  id = "recordar" type="checkbox"/>Recordar
+					</label>
+				</div>
+  			</div> 
+ 		
+	
+   
+		<div class="form-group">
+			<div class="col-md-10 col-md-offset-2">
+				<input  type="submit"	class="btn btn-danger"  name="enviar"	  value="Envia"	  />
+			</div>
+	    </div> 
+ 	
+
+ </form>
+ </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>

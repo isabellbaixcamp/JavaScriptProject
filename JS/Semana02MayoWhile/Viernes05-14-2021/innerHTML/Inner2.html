@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		/*cuatro botones, que haga las siguientes acciones;
+		1. cambio de color del fondo de pantall (document.body)
+		2. cambio color del fondo diferente al anterior de la pantalla
+		3. cambio de color del fondo del div
+		4. cambio color de texto */
+
+		function cambio_color() {
+			document.body.style.backgroundColor = "red";
+		}
+
+		function cambio_color1() {
+			document.body.style.backgroundColor = "blue";
+		}
+
+		function cambio_div() {
+		document.getElementByTagName("div").style.backgroundColor = "yellow";
+		}
+		function color_pes() {
+			document.getElementById("box1").style.color = "red";
+			document.getElementById("box2").style.color = "red";
+			document.getElementById("box3").style.color = "red";
+
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<p id="box1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque itaque ea officia, id aut eligendi sint nemo eveniet magnam expedita pariatur exercitationem, fugit odit magni molestiae nam est dolorum dolor.</p>
+		<p id="box2">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Ea incidunt voluptatibus, doloremque beatae quae dignissimos veritatis totam quis non asperiores aperiam tempore neque, similique debitis iusto cum delectus quod, dolorem.</p>
+		<p id="box3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto a sapiente doloribus reiciendis quidem delectus tenetur architecto eligendi officiis obcaecati. Iste deleniti nobis sit officia aspernatur consectetur pariatur vero, sint?</p>
+	</div>
+	<!-- BUTTON 1 -- >
+	<input type="button" value="onClick" onclick="cambio_color();">
+	<!-- BUTTON 2 -- >
+
+	<input type="button" value="Click me!!" onclick="cambio_color1();">
+	<!-- BUTTON 3 -- >
+
+	<input type="button" value="Div me" onclick="cambio_div();">
+	<!-- BUTTON 4 -- >
+
+	<input type="button" value="onClick" onclick="color_pes();">
+</body>
+</html>

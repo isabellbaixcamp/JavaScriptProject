@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+
+<!-- Un lector de pantalla es una aplicación software que trata de identificar e interpretar aquello que se muestra en pantalla. Esta interpretación se representa a continuación al usuario mediante sintetizadores de texto a voz, iconos sonoros, o una salida braille.-->
+
+</head>
+<body>
+
+	<div class="container">
+ 		<form action="#"role="form" method="post" enctype="multi/form-data" class="form-inline">
+ 
+ 			<div class="form-group">
+				<label for = "nom" class="sr-only">Nom</label>
+				<input	class="form-control" type="text" id="nom" placeholder="nom"/> 
+ 			</div>
+ 		
+ 			<div class="form-group">
+ 				<div class="input-group">
+					<label for = "correo" class="sr-only">Correo	</label>
+						<div class="input-group-addon">@</div>
+					<input	 class="form-control" type="text" id="correo"	placeholder="correo"/>
+				</div>
+			</div>	
+
+   			<div class="form-group checkbox" >
+    			<label for="check">
+					<input type="checkbox" id="check">Recordar
+				</label>
+			</div> 
+  		
+    		<div class="form-group">
+        		<input class="btn btn-primary" type="submit"	  name="enviar"	  value="Envia"/>
+    		</div>
+<!-- o <button type="submit">Submit</button>-->
+ 		</form>
+    	
+
+	</div>
+</body>
+</html>
